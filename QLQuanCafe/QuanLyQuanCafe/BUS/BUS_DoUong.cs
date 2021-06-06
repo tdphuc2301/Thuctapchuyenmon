@@ -16,6 +16,11 @@ namespace BUS
             DAL_DoUong DAL = new DAL_DoUong();
             return DAL.DanhSachDoUong();
         }
+        public DataTable DanhSachDoUongTheoGia(string MaDo_Uong)
+        {
+            DAL_DoUong DAL = new DAL_DoUong();
+            return DAL.DanhSachDoUongTheoGia(MaDo_Uong);
+        }
         public DataTable DanhSachTimKiem(string MaDo_Uong, string TenDo_Uong, decimal DonGia, decimal SoLuongTon, string GhiChu)
         {
             DAL_DoUong DAL = new DAL_DoUong();

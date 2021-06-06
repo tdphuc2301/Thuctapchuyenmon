@@ -72,7 +72,7 @@ namespace DAL
         }
         public static OleDbConnection KetNoiDuLieu()
         {
-            string m_sConnect = @"Data Source=DESKTOP-RD3ACO1\SQLEXPRESS;Initial Catalog=DB_PBL3;Integrated Security=True";
+            string m_sConnect = @"Data Source=MYLAP;Initial Catalog=DB_QuanLyQuanCafe;Integrated Security=True";
             OleDbConnection m_OleDBCKetNoi = new OleDbConnection(m_sConnect);
             m_OleDBCKetNoi.Open();
             return m_OleDBCKetNoi;

@@ -14,6 +14,10 @@ namespace DAL
         {
             return KetNoiSQL.GetData(string.Format("select * FROM DoUong"));
         }
+        public DataTable DanhSachDoUongTheoGia(string MaDo_Uong)
+        {
+            return KetNoiSQL.GetData(string.Format("select * FROM DoUong WHERE MaDo_Uong = '"+ MaDo_Uong + "'"));
+        }
         public DataTable DanhSachTimKiem(string MaDo_Uong, string TenDo_Uong, decimal DonGia, decimal SoLuongTon,string GhiChu)
         {
             string strSQL = string.Format("select * FROM DoUong WHERE MaDo_Uong LIKE N'%" + MaDo_Uong + "%' AND TenDo_Uong LIKE N'%" + TenDo_Uong + "%' AND DonGia LIKE '%" + DonGia + "%' AND SoLuongTon LIKE '%" + SoLuongTon + "%' AND GhiChu LIKE N'%" + GhiChu + "%'");

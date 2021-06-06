@@ -31,7 +31,7 @@ namespace DAL
         }
         public void Them(DTO_KhachHang MaKH)
         {
-            string strSQL = "INSERT INTO KhachHang(MaKH,TenKH,SoDienThoai,DiaChi)  VALUES ( '" + MaKH.MaKH + "',N'" + MaKH.TenKH + "'," + MaKH.SoDienThoai + ",N'" + MaKH.DiaChi + "')";
+            string strSQL = "INSERT INTO KhachHang(MaKH,TenKH,SoDienThoai,DiaChi)  VALUES ( '" + MaKH.MaKH + "',N'" + MaKH.TenKH + "','" + MaKH.SoDienThoai + "',N'" + MaKH.DiaChi + "')";
             KetNoiSQL.ExecuteNonQuery(strSQL);
         }
         public int KiemTraTrung(string MaKH)

@@ -80,6 +80,12 @@
     <Compile Include="frmDoUong_Sua.Designer.cs">
       <DependentUpon>frmDoUong_Sua.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmHoaDon_Sua.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmHoaDon_Sua.Designer.cs">
+      <DependentUpon>frmHoaDon_Sua.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmKhachHang.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -145,6 +151,9 @@
     <EmbeddedResource Include="frmDoUong_Sua.resx">
       <DependentUpon>frmDoUong_Sua.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmHoaDon_Sua.resx">
+      <DependentUpon>frmHoaDon_Sua.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmKhachHang.resx">
       <DependentUpon>frmKhachHang.cs</DependentUpon>
     </EmbeddedResource>
@@ -196,6 +205,10 @@
     <ProjectReference Include="..\BUS\BUS.csproj">
       <Project>{8AE56CEB-1DC9-42C2-9470-7E05B39F2072}</Project>
       <Name>BUS</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DAL\DAL.csproj">
+      <Project>{275A8D9C-13D3-4F6B-92DA-9877340F44C6}</Project>
+      <Name>DAL</Name>
     </ProjectReference>
     <ProjectReference Include="..\DTO\DTO.csproj">
       <Project>{137AE42E-624A-47B0-BE53-EA1EF5682FA8}</Project>

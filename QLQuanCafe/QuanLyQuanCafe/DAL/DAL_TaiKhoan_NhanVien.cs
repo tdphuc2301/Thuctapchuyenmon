@@ -23,6 +23,11 @@ namespace DAL
         {
             return KetNoiSQL.GetData(string.Format("select MaTK_NV,TenTK_NV,SoDienThoai,DiaChi,Quyen FROM TaiKhoan_NhanVien"));
         }
+        public DataTable ThongTinTaiKhoanCaNhan(String MaTK_NV)
+        {
+            return KetNoiSQL.GetData(string.Format("select MaTK_NV,TenTK_NV,SoDienThoai,DiaChi,Quyen FROM TaiKhoan_NhanVien WHERE MaTK_NV = '"+ MaTK_NV + "'"));
+        }
+        
         public DataTable LayMatKhau(string MaTK_NV)
         {
             return KetNoiSQL.GetData(string.Format("select * FROM TaiKhoan_NhanVien WHERE MaTK_NV = '" + MaTK_NV + "'"));

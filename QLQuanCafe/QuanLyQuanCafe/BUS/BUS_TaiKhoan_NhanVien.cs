@@ -26,6 +26,11 @@ namespace BUS
             DAL_TaiKhoan_NhanVien DAL = new DAL_TaiKhoan_NhanVien();
             return DAL.DanhSachTaiKhoan_NhanVien();
         }
+        public DataTable ThongTinTaiKhoanCaNhan(string MaTK_NV)
+        {
+            DAL_TaiKhoan_NhanVien DAL = new DAL_TaiKhoan_NhanVien();
+            return DAL.ThongTinTaiKhoanCaNhan(MaTK_NV);
+        }
         public DataTable LayMatKhau(string MaTK_NV)
         {
             DAL_TaiKhoan_NhanVien DAL = new DAL_TaiKhoan_NhanVien();
