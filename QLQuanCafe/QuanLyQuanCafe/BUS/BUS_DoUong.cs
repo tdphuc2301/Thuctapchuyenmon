@@ -37,10 +37,10 @@ namespace BUS
             DAL_DoUong DAL = new DAL_DoUong();
             DAL.Them(MaDo_Uong);
         }
-        public int KiemTraTrung(string MaTK_NV)
+        public int KiemTraTrung(string MaDo_Uong)
         {
             DAL_DoUong DAL = new DAL_DoUong();
-            int i = DAL.KiemTraTrung(MaTK_NV);
+            int i = DAL.KiemTraTrung(MaDo_Uong);
             return i;
         }
     }

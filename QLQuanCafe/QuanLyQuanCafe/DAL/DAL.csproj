@@ -41,7 +41,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DAL_Ban.cs" />
     <Compile Include="DAL_DoUong.cs" />
+    <Compile Include="DAL_KhachHang.cs" />
     <Compile Include="DAL_TaiKhoan_NhanVien.cs" />
     <Compile Include="KetNoiSQL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

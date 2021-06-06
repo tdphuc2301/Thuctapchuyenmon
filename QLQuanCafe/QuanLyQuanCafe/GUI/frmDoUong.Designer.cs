@@ -222,6 +222,7 @@ namespace GUI
             this.grdDoUong.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.grdDoUong.BackgroundColor = System.Drawing.Color.White;
             this.grdDoUong.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.grdDoUong.Location = new System.Drawing.Point(2, 157);
             this.grdDoUong.Name = "grdDoUong";

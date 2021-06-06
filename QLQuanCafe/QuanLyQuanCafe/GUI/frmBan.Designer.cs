@@ -36,17 +36,18 @@ namespace GUI
             this.btnSua = new System.Windows.Forms.Button();
             this.btnThem = new System.Windows.Forms.Button();
             this.btnTimKiem = new System.Windows.Forms.Button();
-            this.txtTen_tk = new System.Windows.Forms.TextBox();
+            this.txtTenBan = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.txtma_tk = new System.Windows.Forms.TextBox();
+            this.txtMaBan = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.grdTK = new System.Windows.Forms.DataGridView();
-            this.nmso_luong_nguoi = new System.Windows.Forms.NumericUpDown();
-            this.txtghi_chu = new System.Windows.Forms.TextBox();
+            this.grdBan = new System.Windows.Forms.DataGridView();
+            this.nmSoLuongNguoi = new System.Windows.Forms.NumericUpDown();
+            this.txtGhiChu = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.grdTK)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nmso_luong_nguoi)).BeginInit();
+            this.btnXoaTrang = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.grdBan)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nmSoLuongNguoi)).BeginInit();
             this.SuspendLayout();
             // 
             // btnThoat
@@ -61,6 +62,7 @@ namespace GUI
             this.btnThoat.TabIndex = 39;
             this.btnThoat.Text = "Thoát";
             this.btnThoat.UseVisualStyleBackColor = false;
+            this.btnThoat.Click += new System.EventHandler(this.btnThoat_Click);
             // 
             // btnLamMoi
             // 
@@ -74,6 +76,7 @@ namespace GUI
             this.btnLamMoi.TabIndex = 38;
             this.btnLamMoi.Text = "Làm mới";
             this.btnLamMoi.UseVisualStyleBackColor = false;
+            this.btnLamMoi.Click += new System.EventHandler(this.btnLamMoi_Click);
             // 
             // btnXuatExcel
             // 
@@ -87,6 +90,7 @@ namespace GUI
             this.btnXuatExcel.TabIndex = 37;
             this.btnXuatExcel.Text = "Xuất excel";
             this.btnXuatExcel.UseVisualStyleBackColor = false;
+            this.btnXuatExcel.Click += new System.EventHandler(this.btnXuatExcel_Click);
             // 
             // btnXoa
             // 
@@ -100,6 +104,7 @@ namespace GUI
             this.btnXoa.TabIndex = 36;
             this.btnXoa.Text = "Xóa";
             this.btnXoa.UseVisualStyleBackColor = false;
+            this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
             // 
             // btnSua
             // 
@@ -113,6 +118,7 @@ namespace GUI
             this.btnSua.TabIndex = 35;
             this.btnSua.Text = "Sửa";
             this.btnSua.UseVisualStyleBackColor = false;
+            this.btnSua.Click += new System.EventHandler(this.btnSua_Click);
             // 
             // btnThem
             // 
@@ -134,19 +140,20 @@ namespace GUI
             this.btnTimKiem.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnTimKiem.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnTimKiem.ForeColor = System.Drawing.Color.White;
-            this.btnTimKiem.Location = new System.Drawing.Point(168, 99);
+            this.btnTimKiem.Location = new System.Drawing.Point(120, 99);
             this.btnTimKiem.Name = "btnTimKiem";
             this.btnTimKiem.Size = new System.Drawing.Size(97, 30);
             this.btnTimKiem.TabIndex = 33;
             this.btnTimKiem.Text = "Tìm kiếm";
             this.btnTimKiem.UseVisualStyleBackColor = false;
+            this.btnTimKiem.Click += new System.EventHandler(this.btnTimKiem_Click);
             // 
-            // txtTen_tk
+            // txtTenBan
             // 
-            this.txtTen_tk.Location = new System.Drawing.Point(150, 28);
-            this.txtTen_tk.Name = "txtTen_tk";
-            this.txtTen_tk.Size = new System.Drawing.Size(141, 20);
-            this.txtTen_tk.TabIndex = 24;
+            this.txtTenBan.Location = new System.Drawing.Point(150, 28);
+            this.txtTenBan.Name = "txtTenBan";
+            this.txtTenBan.Size = new System.Drawing.Size(141, 20);
+            this.txtTenBan.TabIndex = 24;
             // 
             // label2
             // 
@@ -157,12 +164,12 @@ namespace GUI
             this.label2.TabIndex = 23;
             this.label2.Text = "Tên bàn";
             // 
-            // txtma_tk
+            // txtMaBan
             // 
-            this.txtma_tk.Location = new System.Drawing.Point(150, 5);
-            this.txtma_tk.Name = "txtma_tk";
-            this.txtma_tk.Size = new System.Drawing.Size(141, 20);
-            this.txtma_tk.TabIndex = 22;
+            this.txtMaBan.Location = new System.Drawing.Point(150, 5);
+            this.txtMaBan.Name = "txtMaBan";
+            this.txtMaBan.Size = new System.Drawing.Size(141, 20);
+            this.txtMaBan.TabIndex = 22;
             // 
             // label1
             // 
@@ -173,40 +180,42 @@ namespace GUI
             this.label1.TabIndex = 21;
             this.label1.Text = "Mã bàn";
             // 
-            // grdTK
+            // grdBan
             // 
-            this.grdTK.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.grdBan.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.grdTK.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.grdTK.Location = new System.Drawing.Point(2, 135);
-            this.grdTK.Name = "grdTK";
-            this.grdTK.Size = new System.Drawing.Size(685, 311);
-            this.grdTK.TabIndex = 20;
+            this.grdBan.BackgroundColor = System.Drawing.Color.White;
+            this.grdBan.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.grdBan.Location = new System.Drawing.Point(2, 135);
+            this.grdBan.Name = "grdBan";
+            this.grdBan.Size = new System.Drawing.Size(685, 311);
+            this.grdBan.TabIndex = 20;
+            this.grdBan.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.grdBan_CellClick);
             // 
-            // nmso_luong_nguoi
+            // nmSoLuongNguoi
             // 
-            this.nmso_luong_nguoi.Location = new System.Drawing.Point(149, 51);
-            this.nmso_luong_nguoi.Maximum = new decimal(new int[] {
+            this.nmSoLuongNguoi.Location = new System.Drawing.Point(149, 51);
+            this.nmSoLuongNguoi.Maximum = new decimal(new int[] {
             1000000000,
             0,
             0,
             0});
-            this.nmso_luong_nguoi.Name = "nmso_luong_nguoi";
-            this.nmso_luong_nguoi.Size = new System.Drawing.Size(142, 20);
-            this.nmso_luong_nguoi.TabIndex = 55;
-            this.nmso_luong_nguoi.Value = new decimal(new int[] {
+            this.nmSoLuongNguoi.Name = "nmSoLuongNguoi";
+            this.nmSoLuongNguoi.Size = new System.Drawing.Size(142, 20);
+            this.nmSoLuongNguoi.TabIndex = 55;
+            this.nmSoLuongNguoi.Value = new decimal(new int[] {
             1,
             0,
             0,
             0});
             // 
-            // txtghi_chu
+            // txtGhiChu
             // 
-            this.txtghi_chu.Location = new System.Drawing.Point(149, 73);
-            this.txtghi_chu.Name = "txtghi_chu";
-            this.txtghi_chu.Size = new System.Drawing.Size(141, 20);
-            this.txtghi_chu.TabIndex = 54;
+            this.txtGhiChu.Location = new System.Drawing.Point(149, 73);
+            this.txtGhiChu.Name = "txtGhiChu";
+            this.txtGhiChu.Size = new System.Drawing.Size(141, 20);
+            this.txtGhiChu.TabIndex = 54;
             // 
             // label5
             // 
@@ -226,13 +235,28 @@ namespace GUI
             this.label4.TabIndex = 52;
             this.label4.Text = "Số lượng người";
             // 
+            // btnXoaTrang
+            // 
+            this.btnXoaTrang.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.btnXoaTrang.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnXoaTrang.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnXoaTrang.ForeColor = System.Drawing.Color.White;
+            this.btnXoaTrang.Location = new System.Drawing.Point(223, 100);
+            this.btnXoaTrang.Name = "btnXoaTrang";
+            this.btnXoaTrang.Size = new System.Drawing.Size(97, 30);
+            this.btnXoaTrang.TabIndex = 56;
+            this.btnXoaTrang.Text = "Xóa trắng";
+            this.btnXoaTrang.UseVisualStyleBackColor = false;
+            this.btnXoaTrang.Click += new System.EventHandler(this.btnXoaTrang_Click);
+            // 
             // frmBan
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(688, 450);
-            this.Controls.Add(this.nmso_luong_nguoi);
-            this.Controls.Add(this.txtghi_chu);
+            this.Controls.Add(this.btnXoaTrang);
+            this.Controls.Add(this.nmSoLuongNguoi);
+            this.Controls.Add(this.txtGhiChu);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.btnThoat);
@@ -242,16 +266,17 @@ namespace GUI
             this.Controls.Add(this.btnSua);
             this.Controls.Add(this.btnThem);
             this.Controls.Add(this.btnTimKiem);
-            this.Controls.Add(this.txtTen_tk);
+            this.Controls.Add(this.txtTenBan);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.txtma_tk);
+            this.Controls.Add(this.txtMaBan);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.grdTK);
+            this.Controls.Add(this.grdBan);
             this.Name = "frmBan";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Danh mục bàn";
-            ((System.ComponentModel.ISupportInitialize)(this.grdTK)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nmso_luong_nguoi)).EndInit();
+            this.Load += new System.EventHandler(this.frmBan_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.grdBan)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nmSoLuongNguoi)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -266,14 +291,15 @@ namespace GUI
         private System.Windows.Forms.Button btnSua;
         private System.Windows.Forms.Button btnThem;
         private System.Windows.Forms.Button btnTimKiem;
-        private System.Windows.Forms.TextBox txtTen_tk;
+        private System.Windows.Forms.TextBox txtTenBan;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox txtma_tk;
+        private System.Windows.Forms.TextBox txtMaBan;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.DataGridView grdTK;
-        private System.Windows.Forms.NumericUpDown nmso_luong_nguoi;
-        private System.Windows.Forms.TextBox txtghi_chu;
+        private System.Windows.Forms.DataGridView grdBan;
+        private System.Windows.Forms.NumericUpDown nmSoLuongNguoi;
+        private System.Windows.Forms.TextBox txtGhiChu;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Button btnXoaTrang;
     }
 }

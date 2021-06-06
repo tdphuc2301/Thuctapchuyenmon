@@ -30,16 +30,16 @@ namespace GUI
         private void InitializeComponent()
         {
             this.btnThoat = new System.Windows.Forms.Button();
-            this.btnDangNhap = new System.Windows.Forms.Button();
-            this.nmso_luong_nguoi = new System.Windows.Forms.NumericUpDown();
-            this.txtghi_chu = new System.Windows.Forms.TextBox();
+            this.btnLuu = new System.Windows.Forms.Button();
+            this.nmSoLuongNguoi = new System.Windows.Forms.NumericUpDown();
+            this.txtGhiChu = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.txtTen_tk = new System.Windows.Forms.TextBox();
+            this.txtTenBan = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.txtma_tk = new System.Windows.Forms.TextBox();
+            this.txtMaBan = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.nmso_luong_nguoi)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nmSoLuongNguoi)).BeginInit();
             this.SuspendLayout();
             // 
             // btnThoat
@@ -54,43 +54,45 @@ namespace GUI
             this.btnThoat.TabIndex = 40;
             this.btnThoat.Text = "Hủy";
             this.btnThoat.UseVisualStyleBackColor = false;
+            this.btnThoat.Click += new System.EventHandler(this.btnThoat_Click);
             // 
-            // btnDangNhap
+            // btnLuu
             // 
-            this.btnDangNhap.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.btnDangNhap.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnDangNhap.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDangNhap.ForeColor = System.Drawing.Color.White;
-            this.btnDangNhap.Location = new System.Drawing.Point(94, 126);
-            this.btnDangNhap.Name = "btnDangNhap";
-            this.btnDangNhap.Size = new System.Drawing.Size(112, 30);
-            this.btnDangNhap.TabIndex = 39;
-            this.btnDangNhap.Text = "Lưu thông tin";
-            this.btnDangNhap.UseVisualStyleBackColor = false;
+            this.btnLuu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.btnLuu.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnLuu.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLuu.ForeColor = System.Drawing.Color.White;
+            this.btnLuu.Location = new System.Drawing.Point(94, 126);
+            this.btnLuu.Name = "btnLuu";
+            this.btnLuu.Size = new System.Drawing.Size(112, 30);
+            this.btnLuu.TabIndex = 39;
+            this.btnLuu.Text = "Lưu thông tin";
+            this.btnLuu.UseVisualStyleBackColor = false;
+            this.btnLuu.Click += new System.EventHandler(this.btnLuu_Click);
             // 
-            // nmso_luong_nguoi
+            // nmSoLuongNguoi
             // 
-            this.nmso_luong_nguoi.Location = new System.Drawing.Point(189, 59);
-            this.nmso_luong_nguoi.Maximum = new decimal(new int[] {
+            this.nmSoLuongNguoi.Location = new System.Drawing.Point(189, 59);
+            this.nmSoLuongNguoi.Maximum = new decimal(new int[] {
             1000000000,
             0,
             0,
             0});
-            this.nmso_luong_nguoi.Name = "nmso_luong_nguoi";
-            this.nmso_luong_nguoi.Size = new System.Drawing.Size(142, 20);
-            this.nmso_luong_nguoi.TabIndex = 64;
-            this.nmso_luong_nguoi.Value = new decimal(new int[] {
+            this.nmSoLuongNguoi.Name = "nmSoLuongNguoi";
+            this.nmSoLuongNguoi.Size = new System.Drawing.Size(142, 20);
+            this.nmSoLuongNguoi.TabIndex = 64;
+            this.nmSoLuongNguoi.Value = new decimal(new int[] {
             1,
             0,
             0,
             0});
             // 
-            // txtghi_chu
+            // txtGhiChu
             // 
-            this.txtghi_chu.Location = new System.Drawing.Point(189, 81);
-            this.txtghi_chu.Name = "txtghi_chu";
-            this.txtghi_chu.Size = new System.Drawing.Size(141, 20);
-            this.txtghi_chu.TabIndex = 63;
+            this.txtGhiChu.Location = new System.Drawing.Point(189, 81);
+            this.txtGhiChu.Name = "txtGhiChu";
+            this.txtGhiChu.Size = new System.Drawing.Size(141, 20);
+            this.txtGhiChu.TabIndex = 63;
             // 
             // label5
             // 
@@ -110,12 +112,12 @@ namespace GUI
             this.label4.TabIndex = 61;
             this.label4.Text = "Số lượng người";
             // 
-            // txtTen_tk
+            // txtTenBan
             // 
-            this.txtTen_tk.Location = new System.Drawing.Point(190, 36);
-            this.txtTen_tk.Name = "txtTen_tk";
-            this.txtTen_tk.Size = new System.Drawing.Size(141, 20);
-            this.txtTen_tk.TabIndex = 59;
+            this.txtTenBan.Location = new System.Drawing.Point(190, 36);
+            this.txtTenBan.Name = "txtTenBan";
+            this.txtTenBan.Size = new System.Drawing.Size(141, 20);
+            this.txtTenBan.TabIndex = 59;
             // 
             // label2
             // 
@@ -126,12 +128,12 @@ namespace GUI
             this.label2.TabIndex = 58;
             this.label2.Text = "Tên bàn";
             // 
-            // txtma_tk
+            // txtMaBan
             // 
-            this.txtma_tk.Location = new System.Drawing.Point(190, 13);
-            this.txtma_tk.Name = "txtma_tk";
-            this.txtma_tk.Size = new System.Drawing.Size(141, 20);
-            this.txtma_tk.TabIndex = 57;
+            this.txtMaBan.Location = new System.Drawing.Point(190, 13);
+            this.txtMaBan.Name = "txtMaBan";
+            this.txtMaBan.Size = new System.Drawing.Size(141, 20);
+            this.txtMaBan.TabIndex = 57;
             // 
             // label1
             // 
@@ -147,20 +149,21 @@ namespace GUI
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(380, 164);
-            this.Controls.Add(this.nmso_luong_nguoi);
-            this.Controls.Add(this.txtghi_chu);
+            this.Controls.Add(this.nmSoLuongNguoi);
+            this.Controls.Add(this.txtGhiChu);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.txtTen_tk);
+            this.Controls.Add(this.txtTenBan);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.txtma_tk);
+            this.Controls.Add(this.txtMaBan);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnThoat);
-            this.Controls.Add(this.btnDangNhap);
+            this.Controls.Add(this.btnLuu);
             this.Name = "frmBan_Sua";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmBan_Sua";
-            ((System.ComponentModel.ISupportInitialize)(this.nmso_luong_nguoi)).EndInit();
+            this.Load += new System.EventHandler(this.frmBan_Sua_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.nmSoLuongNguoi)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -169,14 +172,14 @@ namespace GUI
         #endregion
 
         private System.Windows.Forms.Button btnThoat;
-        private System.Windows.Forms.Button btnDangNhap;
-        private System.Windows.Forms.NumericUpDown nmso_luong_nguoi;
-        private System.Windows.Forms.TextBox txtghi_chu;
+        private System.Windows.Forms.Button btnLuu;
+        private System.Windows.Forms.NumericUpDown nmSoLuongNguoi;
+        private System.Windows.Forms.TextBox txtGhiChu;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox txtTen_tk;
+        private System.Windows.Forms.TextBox txtTenBan;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox txtma_tk;
+        private System.Windows.Forms.TextBox txtMaBan;
         private System.Windows.Forms.Label label1;
     }
 }

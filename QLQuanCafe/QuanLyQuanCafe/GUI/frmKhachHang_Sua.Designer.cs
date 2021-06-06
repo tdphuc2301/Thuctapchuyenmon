@@ -30,14 +30,14 @@ namespace GUI
         private void InitializeComponent()
         {
             this.btnThoat = new System.Windows.Forms.Button();
-            this.btnDangNhap = new System.Windows.Forms.Button();
-            this.txtdia_chi = new System.Windows.Forms.TextBox();
+            this.btnLuu = new System.Windows.Forms.Button();
+            this.txtDiaChi = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.txtso_dien_thoai = new System.Windows.Forms.TextBox();
+            this.txtSoDienThoai = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.txtTen_kh = new System.Windows.Forms.TextBox();
+            this.txtTenKH = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.txtma_kh = new System.Windows.Forms.TextBox();
+            this.txtMaKH = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
@@ -55,26 +55,26 @@ namespace GUI
             this.btnThoat.UseVisualStyleBackColor = false;
             this.btnThoat.Click += new System.EventHandler(this.btnThoat_Click);
             // 
-            // btnDangNhap
+            // btnLuu
             // 
-            this.btnDangNhap.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.btnDangNhap.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnDangNhap.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDangNhap.ForeColor = System.Drawing.Color.White;
-            this.btnDangNhap.Location = new System.Drawing.Point(169, 115);
-            this.btnDangNhap.Name = "btnDangNhap";
-            this.btnDangNhap.Size = new System.Drawing.Size(112, 30);
-            this.btnDangNhap.TabIndex = 39;
-            this.btnDangNhap.Text = "Lưu thông tin";
-            this.btnDangNhap.UseVisualStyleBackColor = false;
-            this.btnDangNhap.Click += new System.EventHandler(this.btnDangNhap_Click);
+            this.btnLuu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.btnLuu.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnLuu.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLuu.ForeColor = System.Drawing.Color.White;
+            this.btnLuu.Location = new System.Drawing.Point(169, 115);
+            this.btnLuu.Name = "btnLuu";
+            this.btnLuu.Size = new System.Drawing.Size(112, 30);
+            this.btnLuu.TabIndex = 39;
+            this.btnLuu.Text = "Lưu thông tin";
+            this.btnLuu.UseVisualStyleBackColor = false;
+            this.btnLuu.Click += new System.EventHandler(this.btnDangNhap_Click);
             // 
-            // txtdia_chi
+            // txtDiaChi
             // 
-            this.txtdia_chi.Location = new System.Drawing.Point(168, 80);
-            this.txtdia_chi.Name = "txtdia_chi";
-            this.txtdia_chi.Size = new System.Drawing.Size(316, 20);
-            this.txtdia_chi.TabIndex = 48;
+            this.txtDiaChi.Location = new System.Drawing.Point(168, 80);
+            this.txtDiaChi.Name = "txtDiaChi";
+            this.txtDiaChi.Size = new System.Drawing.Size(316, 20);
+            this.txtDiaChi.TabIndex = 48;
             // 
             // label5
             // 
@@ -85,12 +85,12 @@ namespace GUI
             this.label5.TabIndex = 47;
             this.label5.Text = "Địa chỉ";
             // 
-            // txtso_dien_thoai
+            // txtSoDienThoai
             // 
-            this.txtso_dien_thoai.Location = new System.Drawing.Point(168, 57);
-            this.txtso_dien_thoai.Name = "txtso_dien_thoai";
-            this.txtso_dien_thoai.Size = new System.Drawing.Size(141, 20);
-            this.txtso_dien_thoai.TabIndex = 46;
+            this.txtSoDienThoai.Location = new System.Drawing.Point(168, 57);
+            this.txtSoDienThoai.Name = "txtSoDienThoai";
+            this.txtSoDienThoai.Size = new System.Drawing.Size(141, 20);
+            this.txtSoDienThoai.TabIndex = 46;
             // 
             // label3
             // 
@@ -101,12 +101,12 @@ namespace GUI
             this.label3.TabIndex = 45;
             this.label3.Text = "Số điện thoại";
             // 
-            // txtTen_kh
+            // txtTenKH
             // 
-            this.txtTen_kh.Location = new System.Drawing.Point(168, 35);
-            this.txtTen_kh.Name = "txtTen_kh";
-            this.txtTen_kh.Size = new System.Drawing.Size(141, 20);
-            this.txtTen_kh.TabIndex = 44;
+            this.txtTenKH.Location = new System.Drawing.Point(168, 35);
+            this.txtTenKH.Name = "txtTenKH";
+            this.txtTenKH.Size = new System.Drawing.Size(141, 20);
+            this.txtTenKH.TabIndex = 44;
             // 
             // label2
             // 
@@ -117,12 +117,12 @@ namespace GUI
             this.label2.TabIndex = 43;
             this.label2.Text = "Tên khách hàng";
             // 
-            // txtma_kh
+            // txtMaKH
             // 
-            this.txtma_kh.Location = new System.Drawing.Point(168, 12);
-            this.txtma_kh.Name = "txtma_kh";
-            this.txtma_kh.Size = new System.Drawing.Size(142, 20);
-            this.txtma_kh.TabIndex = 42;
+            this.txtMaKH.Location = new System.Drawing.Point(168, 12);
+            this.txtMaKH.Name = "txtMaKH";
+            this.txtMaKH.Size = new System.Drawing.Size(142, 20);
+            this.txtMaKH.TabIndex = 42;
             // 
             // label1
             // 
@@ -138,19 +138,20 @@ namespace GUI
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(511, 157);
-            this.Controls.Add(this.txtdia_chi);
+            this.Controls.Add(this.txtDiaChi);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.txtso_dien_thoai);
+            this.Controls.Add(this.txtSoDienThoai);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.txtTen_kh);
+            this.Controls.Add(this.txtTenKH);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.txtma_kh);
+            this.Controls.Add(this.txtMaKH);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnThoat);
-            this.Controls.Add(this.btnDangNhap);
+            this.Controls.Add(this.btnLuu);
             this.Name = "frmKhachHang_Sua";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmKhachHang_Sua";
+            this.Load += new System.EventHandler(this.frmKhachHang_Sua_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -159,14 +160,14 @@ namespace GUI
         #endregion
 
         private System.Windows.Forms.Button btnThoat;
-        private System.Windows.Forms.Button btnDangNhap;
-        private System.Windows.Forms.TextBox txtdia_chi;
+        private System.Windows.Forms.Button btnLuu;
+        private System.Windows.Forms.TextBox txtDiaChi;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox txtso_dien_thoai;
+        private System.Windows.Forms.TextBox txtSoDienThoai;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox txtTen_kh;
+        private System.Windows.Forms.TextBox txtTenKH;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox txtma_kh;
+        private System.Windows.Forms.TextBox txtMaKH;
         private System.Windows.Forms.Label label1;
     }
 }

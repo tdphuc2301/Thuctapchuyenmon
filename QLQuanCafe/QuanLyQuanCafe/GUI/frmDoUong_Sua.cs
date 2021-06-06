@@ -96,9 +96,9 @@ namespace GUI
                 this.Close();
             }
         }
-        private int KiemTraTrung(string MaTK_NV)
+        private int KiemTraTrung(string MaDo_Uong)
         {
-            if (BUS.KiemTraTrung(MaTK_NV) == 1)
+            if (BUS.KiemTraTrung(MaDo_Uong) == 1)
                 return 0;
             return 1;
         }
