@@ -29,16 +29,16 @@ namespace GUI
         /// </summary>
         private void InitializeComponent()
         {
-            this.grdTK = new System.Windows.Forms.DataGridView();
+            this.grdTK_NV = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
-            this.txtma_tk = new System.Windows.Forms.TextBox();
-            this.txtTen_tk = new System.Windows.Forms.TextBox();
+            this.txtMaTK_NV = new System.Windows.Forms.TextBox();
+            this.txtTenTK_NV = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.txtmat_khau = new System.Windows.Forms.TextBox();
+            this.txtMatKhau = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.txtso_dien_thoai = new System.Windows.Forms.TextBox();
+            this.txtSoDienThoai = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.txtdia_chi = new System.Windows.Forms.TextBox();
+            this.txtDiaChi = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.cboQuyen = new System.Windows.Forms.ComboBox();
@@ -49,19 +49,22 @@ namespace GUI
             this.btnXuatExcel = new System.Windows.Forms.Button();
             this.btnLamMoi = new System.Windows.Forms.Button();
             this.btnThoat = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.grdTK)).BeginInit();
+            this.btnXoaTrang = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.grdTK_NV)).BeginInit();
             this.SuspendLayout();
             // 
-            // grdTK
+            // grdTK_NV
             // 
-            this.grdTK.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.grdTK_NV.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.grdTK.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.grdTK.Location = new System.Drawing.Point(1, 176);
-            this.grdTK.Name = "grdTK";
-            this.grdTK.Size = new System.Drawing.Size(685, 271);
-            this.grdTK.TabIndex = 0;
+            this.grdTK_NV.BackgroundColor = System.Drawing.Color.White;
+            this.grdTK_NV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.grdTK_NV.Location = new System.Drawing.Point(1, 176);
+            this.grdTK_NV.Name = "grdTK_NV";
+            this.grdTK_NV.Size = new System.Drawing.Size(685, 271);
+            this.grdTK_NV.TabIndex = 0;
+            this.grdTK_NV.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.grdTK_NV_CellClick);
             // 
             // label1
             // 
@@ -72,19 +75,19 @@ namespace GUI
             this.label1.TabIndex = 1;
             this.label1.Text = "Mã tài khoản/nhân viên";
             // 
-            // txtma_tk
+            // txtMaTK_NV
             // 
-            this.txtma_tk.Location = new System.Drawing.Point(149, 6);
-            this.txtma_tk.Name = "txtma_tk";
-            this.txtma_tk.Size = new System.Drawing.Size(141, 20);
-            this.txtma_tk.TabIndex = 2;
+            this.txtMaTK_NV.Location = new System.Drawing.Point(149, 6);
+            this.txtMaTK_NV.Name = "txtMaTK_NV";
+            this.txtMaTK_NV.Size = new System.Drawing.Size(141, 20);
+            this.txtMaTK_NV.TabIndex = 2;
             // 
-            // txtTen_tk
+            // txtTenTK_NV
             // 
-            this.txtTen_tk.Location = new System.Drawing.Point(149, 29);
-            this.txtTen_tk.Name = "txtTen_tk";
-            this.txtTen_tk.Size = new System.Drawing.Size(141, 20);
-            this.txtTen_tk.TabIndex = 4;
+            this.txtTenTK_NV.Location = new System.Drawing.Point(149, 29);
+            this.txtTenTK_NV.Name = "txtTenTK_NV";
+            this.txtTenTK_NV.Size = new System.Drawing.Size(141, 20);
+            this.txtTenTK_NV.TabIndex = 4;
             // 
             // label2
             // 
@@ -95,12 +98,13 @@ namespace GUI
             this.label2.TabIndex = 3;
             this.label2.Text = "Tên tài khoản/nhân viên";
             // 
-            // txtmat_khau
+            // txtMatKhau
             // 
-            this.txtmat_khau.Location = new System.Drawing.Point(149, 51);
-            this.txtmat_khau.Name = "txtmat_khau";
-            this.txtmat_khau.Size = new System.Drawing.Size(141, 20);
-            this.txtmat_khau.TabIndex = 6;
+            this.txtMatKhau.Location = new System.Drawing.Point(149, 51);
+            this.txtMatKhau.Name = "txtMatKhau";
+            this.txtMatKhau.PasswordChar = '*';
+            this.txtMatKhau.Size = new System.Drawing.Size(141, 20);
+            this.txtMatKhau.TabIndex = 6;
             // 
             // label3
             // 
@@ -111,12 +115,12 @@ namespace GUI
             this.label3.TabIndex = 5;
             this.label3.Text = "Mật khẩu";
             // 
-            // txtso_dien_thoai
+            // txtSoDienThoai
             // 
-            this.txtso_dien_thoai.Location = new System.Drawing.Point(149, 73);
-            this.txtso_dien_thoai.Name = "txtso_dien_thoai";
-            this.txtso_dien_thoai.Size = new System.Drawing.Size(141, 20);
-            this.txtso_dien_thoai.TabIndex = 8;
+            this.txtSoDienThoai.Location = new System.Drawing.Point(149, 73);
+            this.txtSoDienThoai.Name = "txtSoDienThoai";
+            this.txtSoDienThoai.Size = new System.Drawing.Size(141, 20);
+            this.txtSoDienThoai.TabIndex = 8;
             // 
             // label4
             // 
@@ -127,12 +131,12 @@ namespace GUI
             this.label4.TabIndex = 7;
             this.label4.Text = "Số điện thoại";
             // 
-            // txtdia_chi
+            // txtDiaChi
             // 
-            this.txtdia_chi.Location = new System.Drawing.Point(149, 95);
-            this.txtdia_chi.Name = "txtdia_chi";
-            this.txtdia_chi.Size = new System.Drawing.Size(141, 20);
-            this.txtdia_chi.TabIndex = 10;
+            this.txtDiaChi.Location = new System.Drawing.Point(149, 95);
+            this.txtDiaChi.Name = "txtDiaChi";
+            this.txtDiaChi.Size = new System.Drawing.Size(141, 20);
+            this.txtDiaChi.TabIndex = 10;
             // 
             // label5
             // 
@@ -167,12 +171,13 @@ namespace GUI
             this.btnTimKiem.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnTimKiem.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnTimKiem.ForeColor = System.Drawing.Color.White;
-            this.btnTimKiem.Location = new System.Drawing.Point(171, 142);
+            this.btnTimKiem.Location = new System.Drawing.Point(113, 144);
             this.btnTimKiem.Name = "btnTimKiem";
             this.btnTimKiem.Size = new System.Drawing.Size(97, 30);
             this.btnTimKiem.TabIndex = 13;
             this.btnTimKiem.Text = "Tìm kiếm";
             this.btnTimKiem.UseVisualStyleBackColor = false;
+            this.btnTimKiem.Click += new System.EventHandler(this.btnTimKiem_Click);
             // 
             // btnThem
             // 
@@ -200,6 +205,7 @@ namespace GUI
             this.btnSua.TabIndex = 15;
             this.btnSua.Text = "Sửa";
             this.btnSua.UseVisualStyleBackColor = false;
+            this.btnSua.Click += new System.EventHandler(this.btnSua_Click);
             // 
             // btnXoa
             // 
@@ -213,6 +219,7 @@ namespace GUI
             this.btnXoa.TabIndex = 16;
             this.btnXoa.Text = "Xóa";
             this.btnXoa.UseVisualStyleBackColor = false;
+            this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
             // 
             // btnXuatExcel
             // 
@@ -226,6 +233,7 @@ namespace GUI
             this.btnXuatExcel.TabIndex = 17;
             this.btnXuatExcel.Text = "Xuất excel";
             this.btnXuatExcel.UseVisualStyleBackColor = false;
+            this.btnXuatExcel.Click += new System.EventHandler(this.btnXuatExcel_Click);
             // 
             // btnLamMoi
             // 
@@ -239,6 +247,7 @@ namespace GUI
             this.btnLamMoi.TabIndex = 18;
             this.btnLamMoi.Text = "Làm mới";
             this.btnLamMoi.UseVisualStyleBackColor = false;
+            this.btnLamMoi.Click += new System.EventHandler(this.btnLamMoi_Click);
             // 
             // btnThoat
             // 
@@ -252,12 +261,28 @@ namespace GUI
             this.btnThoat.TabIndex = 19;
             this.btnThoat.Text = "Thoát";
             this.btnThoat.UseVisualStyleBackColor = false;
+            this.btnThoat.Click += new System.EventHandler(this.btnThoat_Click);
             // 
-            // frmTK_NV
+            // btnXoaTrang
+            // 
+            this.btnXoaTrang.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.btnXoaTrang.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnXoaTrang.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnXoaTrang.ForeColor = System.Drawing.Color.White;
+            this.btnXoaTrang.Location = new System.Drawing.Point(216, 144);
+            this.btnXoaTrang.Name = "btnXoaTrang";
+            this.btnXoaTrang.Size = new System.Drawing.Size(97, 30);
+            this.btnXoaTrang.TabIndex = 20;
+            this.btnXoaTrang.Text = "Xóa trắng";
+            this.btnXoaTrang.UseVisualStyleBackColor = false;
+            this.btnXoaTrang.Click += new System.EventHandler(this.btnXoaTrang_Click);
+            // 
+            // frmThongTin_NhanVien
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(688, 450);
+            this.Controls.Add(this.btnXoaTrang);
             this.Controls.Add(this.btnThoat);
             this.Controls.Add(this.btnLamMoi);
             this.Controls.Add(this.btnXuatExcel);
@@ -267,21 +292,22 @@ namespace GUI
             this.Controls.Add(this.btnTimKiem);
             this.Controls.Add(this.cboQuyen);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.txtdia_chi);
+            this.Controls.Add(this.txtDiaChi);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.txtso_dien_thoai);
+            this.Controls.Add(this.txtSoDienThoai);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.txtmat_khau);
+            this.Controls.Add(this.txtMatKhau);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.txtTen_tk);
+            this.Controls.Add(this.txtTenTK_NV);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.txtma_tk);
+            this.Controls.Add(this.txtMaTK_NV);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.grdTK);
-            this.Name = "frmTK_NV";
+            this.Controls.Add(this.grdTK_NV);
+            this.Name = "frmThongTin_NhanVien";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Dach sách tài khoản và nhân viên";
-            ((System.ComponentModel.ISupportInitialize)(this.grdTK)).EndInit();
+            this.Load += new System.EventHandler(this.frmThongTin_NhanVien_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.grdTK_NV)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -289,16 +315,16 @@ namespace GUI
 
         #endregion
 
-        private System.Windows.Forms.DataGridView grdTK;
+        private System.Windows.Forms.DataGridView grdTK_NV;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox txtma_tk;
-        private System.Windows.Forms.TextBox txtTen_tk;
+        private System.Windows.Forms.TextBox txtMaTK_NV;
+        private System.Windows.Forms.TextBox txtTenTK_NV;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox txtmat_khau;
+        private System.Windows.Forms.TextBox txtMatKhau;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox txtso_dien_thoai;
+        private System.Windows.Forms.TextBox txtSoDienThoai;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox txtdia_chi;
+        private System.Windows.Forms.TextBox txtDiaChi;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.ComboBox cboQuyen;
@@ -309,5 +335,6 @@ namespace GUI
         private System.Windows.Forms.Button btnXuatExcel;
         private System.Windows.Forms.Button btnLamMoi;
         private System.Windows.Forms.Button btnThoat;
+        private System.Windows.Forms.Button btnXoaTrang;
     }
 }

@@ -33,7 +33,7 @@ namespace GUI
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.cboRoles = new System.Windows.Forms.ComboBox();
+            this.cboQuyen = new System.Windows.Forms.ComboBox();
             this.btnThoat = new System.Windows.Forms.Button();
             this.btnDangNhap = new System.Windows.Forms.Button();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
@@ -55,23 +55,24 @@ namespace GUI
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(852, 506);
+            this.pictureBox1.Size = new System.Drawing.Size(445, 309);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.Navy;
             this.groupBox1.Controls.Add(this.pictureBox5);
-            this.groupBox1.Controls.Add(this.cboRoles);
+            this.groupBox1.Controls.Add(this.cboQuyen);
             this.groupBox1.Controls.Add(this.btnThoat);
             this.groupBox1.Controls.Add(this.btnDangNhap);
             this.groupBox1.Controls.Add(this.pictureBox3);
             this.groupBox1.Controls.Add(this.pictureBox2);
             this.groupBox1.Controls.Add(this.txtMatKhau);
             this.groupBox1.Controls.Add(this.txtMaDangNhap);
-            this.groupBox1.Location = new System.Drawing.Point(246, 162);
+            this.groupBox1.Location = new System.Drawing.Point(46, 76);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(353, 209);
             this.groupBox1.TabIndex = 1;
@@ -87,16 +88,16 @@ namespace GUI
             this.pictureBox5.TabIndex = 159;
             this.pictureBox5.TabStop = false;
             // 
-            // cboRoles
+            // cboQuyen
             // 
-            this.cboRoles.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cboRoles.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cboRoles.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cboRoles.FormattingEnabled = true;
-            this.cboRoles.Location = new System.Drawing.Point(84, 107);
-            this.cboRoles.Name = "cboRoles";
-            this.cboRoles.Size = new System.Drawing.Size(226, 22);
-            this.cboRoles.TabIndex = 158;
+            this.cboQuyen.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboQuyen.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cboQuyen.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cboQuyen.FormattingEnabled = true;
+            this.cboQuyen.Location = new System.Drawing.Point(84, 107);
+            this.cboQuyen.Name = "cboQuyen";
+            this.cboQuyen.Size = new System.Drawing.Size(226, 22);
+            this.cboQuyen.TabIndex = 158;
             // 
             // btnThoat
             // 
@@ -148,24 +149,29 @@ namespace GUI
             // 
             // txtMatKhau
             // 
+            this.txtMatKhau.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtMatKhau.Location = new System.Drawing.Point(84, 70);
             this.txtMatKhau.Multiline = true;
             this.txtMatKhau.Name = "txtMatKhau";
+            this.txtMatKhau.PasswordChar = '*';
             this.txtMatKhau.Size = new System.Drawing.Size(226, 31);
             this.txtMatKhau.TabIndex = 1;
+            this.txtMatKhau.Text = "000";
             // 
             // txtMaDangNhap
             // 
+            this.txtMaDangNhap.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtMaDangNhap.Location = new System.Drawing.Point(84, 33);
             this.txtMaDangNhap.Multiline = true;
             this.txtMaDangNhap.Name = "txtMaDangNhap";
             this.txtMaDangNhap.Size = new System.Drawing.Size(226, 31);
             this.txtMaDangNhap.TabIndex = 0;
+            this.txtMaDangNhap.Text = "ADMIN";
             // 
             // pictureBox4
             // 
             this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(369, 112);
+            this.pictureBox4.Location = new System.Drawing.Point(167, 26);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(123, 77);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -176,7 +182,7 @@ namespace GUI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(852, 506);
+            this.ClientSize = new System.Drawing.Size(445, 309);
             this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.pictureBox1);
@@ -185,6 +191,7 @@ namespace GUI
             this.Name = "frmDangNhap";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Đăng nhập hệ thống";
+            this.Load += new System.EventHandler(this.frmDangNhap_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
@@ -208,7 +215,7 @@ namespace GUI
         private System.Windows.Forms.TextBox txtMaDangNhap;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.PictureBox pictureBox5;
-        internal System.Windows.Forms.ComboBox cboRoles;
+        internal System.Windows.Forms.ComboBox cboQuyen;
     }
 }
 

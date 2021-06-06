@@ -146,7 +146,7 @@ namespace GUI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(374, 182);
+            this.ClientSize = new System.Drawing.Size(380, 164);
             this.Controls.Add(this.nmso_luong_nguoi);
             this.Controls.Add(this.txtghi_chu);
             this.Controls.Add(this.label5);
