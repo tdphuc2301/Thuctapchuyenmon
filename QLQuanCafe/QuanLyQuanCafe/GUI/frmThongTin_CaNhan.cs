@@ -1,4 +1,5 @@
 ﻿using BUS;
+using DAL;
 using DTO;
 using System;
 using System.Collections.Generic;
@@ -38,6 +39,47 @@ namespace GUI
             cboQuyen.DisplayMember = "TenQuyen";
             cboQuyen.ValueMember = "MaQuyen";
             cboQuyen.SelectedIndex = 0;
+        }
+
+        private void btnThoat_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void btnLuu_Click(object sender, EventArgs e)
+        {
+            if (txtMatKhau_Cu.Text == "")
+            {
+                MessageBox.Show("Mật khẩu cũ không được trống", "Thông báo",
+                MessageBoxButtons.OK, MessageBoxIcon.Error);
+                txtMatKhau_Cu.Focus();
+                return;
+            }
+            if (txtMatKhau_Moi.Text == "")
+            {
+                MessageBox.Show("Mật khẩu mới không được trống", "Thông báo",
+                MessageBoxButtons.OK, MessageBoxIcon.Error);
+                txtMatKhau_Moi.Focus();
+                return;
+            }
+            if ((txtMatKhau_Moi.Text != txtMatKhau_NhapLai.Text))
+            {
+                MessageBox.Show("Nhập lại mật khẩu không trùng khớp", "Thông báo",
+                MessageBoxButtons.OK, MessageBoxIcon.Error);
+                txtMatKhau_Moi.Focus();
+                return;
+            }
+            if (txtMatKhau_Cu.Text != frmDangNhap.MatKhau_Luu)
+            {
+                MessageBox.Show("Mật khẩu cũ không chính xác", "Thông báo",
+                MessageBoxButtons.OK, MessageBoxIcon.Error);
+                txtMatKhau_Cu.Focus();
+                return;
+            }
+            string strSQL = string.Format(@"UPDATE TaiKhoan_NhanVien set MatKhau = '" + txtMatKhau_Moi.Text + "' where MaTK_NV = '" + txtMaTK_NV.Text + "'");
+            KetNoiSQL.ExecuteNonQuery(strSQL);
+            MessageBox.Show("Đổi mật khẩu thành công ", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information, MessageBoxDefaultButton.Button1);
+            this.Close();
         }
     }
 }

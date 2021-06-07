@@ -41,14 +41,14 @@ namespace GUI
             this.txtMaTK_NV = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.btnThoat = new System.Windows.Forms.Button();
-            this.btnDangNhap = new System.Windows.Forms.Button();
+            this.btnLuu = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txtMatKhau_Cu = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
+            this.txtMatKhau_Moi = new System.Windows.Forms.TextBox();
+            this.txtMatKhau_NhapLai = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
@@ -175,29 +175,31 @@ namespace GUI
             this.btnThoat.TabIndex = 40;
             this.btnThoat.Text = "Hủy";
             this.btnThoat.UseVisualStyleBackColor = false;
+            this.btnThoat.Click += new System.EventHandler(this.btnThoat_Click);
             // 
-            // btnDangNhap
+            // btnLuu
             // 
-            this.btnDangNhap.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.btnDangNhap.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnDangNhap.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDangNhap.ForeColor = System.Drawing.Color.White;
-            this.btnDangNhap.Location = new System.Drawing.Point(97, 102);
-            this.btnDangNhap.Name = "btnDangNhap";
-            this.btnDangNhap.Size = new System.Drawing.Size(112, 30);
-            this.btnDangNhap.TabIndex = 39;
-            this.btnDangNhap.Text = "Lưu thông tin";
-            this.btnDangNhap.UseVisualStyleBackColor = false;
+            this.btnLuu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.btnLuu.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnLuu.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLuu.ForeColor = System.Drawing.Color.White;
+            this.btnLuu.Location = new System.Drawing.Point(97, 102);
+            this.btnLuu.Name = "btnLuu";
+            this.btnLuu.Size = new System.Drawing.Size(112, 30);
+            this.btnLuu.TabIndex = 39;
+            this.btnLuu.Text = "Lưu thông tin";
+            this.btnLuu.UseVisualStyleBackColor = false;
+            this.btnLuu.Click += new System.EventHandler(this.btnLuu_Click);
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.txtMatKhau_NhapLai);
+            this.groupBox2.Controls.Add(this.txtMatKhau_Moi);
             this.groupBox2.Controls.Add(this.btnThoat);
-            this.groupBox2.Controls.Add(this.btnDangNhap);
-            this.groupBox2.Controls.Add(this.textBox1);
+            this.groupBox2.Controls.Add(this.btnLuu);
             this.groupBox2.Controls.Add(this.label7);
-            this.groupBox2.Controls.Add(this.textBox2);
             this.groupBox2.Controls.Add(this.label8);
-            this.groupBox2.Controls.Add(this.textBox3);
+            this.groupBox2.Controls.Add(this.txtMatKhau_Cu);
             this.groupBox2.Controls.Add(this.label9);
             this.groupBox2.Location = new System.Drawing.Point(2, 164);
             this.groupBox2.Name = "groupBox2";
@@ -206,53 +208,56 @@ namespace GUI
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Đổi mật khẩu";
             // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(171, 66);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(189, 20);
-            this.textBox1.TabIndex = 42;
-            // 
             // label7
             // 
             this.label7.AutoSize = true;
             this.label7.Location = new System.Drawing.Point(34, 70);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(40, 13);
+            this.label7.Size = new System.Drawing.Size(112, 13);
             this.label7.TabIndex = 41;
-            this.label7.Text = "Địa chỉ";
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(171, 44);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(189, 20);
-            this.textBox2.TabIndex = 40;
+            this.label7.Text = "Nhập lại mật khẩu mới";
             // 
             // label8
             // 
             this.label8.AutoSize = true;
             this.label8.Location = new System.Drawing.Point(34, 47);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(70, 13);
+            this.label8.Size = new System.Drawing.Size(71, 13);
             this.label8.TabIndex = 39;
-            this.label8.Text = "Số điện thoại";
+            this.label8.Text = "Mật khẩu mới";
             // 
-            // textBox3
+            // txtMatKhau_Cu
             // 
-            this.textBox3.Location = new System.Drawing.Point(171, 22);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(189, 20);
-            this.textBox3.TabIndex = 38;
+            this.txtMatKhau_Cu.Location = new System.Drawing.Point(171, 22);
+            this.txtMatKhau_Cu.Name = "txtMatKhau_Cu";
+            this.txtMatKhau_Cu.PasswordChar = '*';
+            this.txtMatKhau_Cu.Size = new System.Drawing.Size(189, 20);
+            this.txtMatKhau_Cu.TabIndex = 38;
             // 
             // label9
             // 
             this.label9.AutoSize = true;
             this.label9.Location = new System.Drawing.Point(34, 25);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(52, 13);
+            this.label9.Size = new System.Drawing.Size(67, 13);
             this.label9.TabIndex = 37;
-            this.label9.Text = "Mật khẩu";
+            this.label9.Text = "Mật khẩu cũ";
+            // 
+            // txtMatKhau_Moi
+            // 
+            this.txtMatKhau_Moi.Location = new System.Drawing.Point(171, 44);
+            this.txtMatKhau_Moi.Name = "txtMatKhau_Moi";
+            this.txtMatKhau_Moi.PasswordChar = '*';
+            this.txtMatKhau_Moi.Size = new System.Drawing.Size(189, 20);
+            this.txtMatKhau_Moi.TabIndex = 43;
+            // 
+            // txtMatKhau_NhapLai
+            // 
+            this.txtMatKhau_NhapLai.Location = new System.Drawing.Point(171, 66);
+            this.txtMatKhau_NhapLai.Name = "txtMatKhau_NhapLai";
+            this.txtMatKhau_NhapLai.PasswordChar = '*';
+            this.txtMatKhau_NhapLai.Size = new System.Drawing.Size(189, 20);
+            this.txtMatKhau_NhapLai.TabIndex = 44;
             // 
             // frmThongTin_CaNhan
             // 
@@ -287,13 +292,13 @@ namespace GUI
         private System.Windows.Forms.TextBox txtMaTK_NV;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnThoat;
-        private System.Windows.Forms.Button btnDangNhap;
+        private System.Windows.Forms.Button btnLuu;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txtMatKhau_Cu;
         private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.TextBox txtMatKhau_NhapLai;
+        private System.Windows.Forms.TextBox txtMatKhau_Moi;
     }
 }

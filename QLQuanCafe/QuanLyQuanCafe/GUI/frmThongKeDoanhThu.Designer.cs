@@ -29,54 +29,57 @@ namespace GUI
         /// </summary>
         private void InitializeComponent()
         {
-            this.grdTK = new System.Windows.Forms.DataGridView();
+            this.grdDoanhThu = new System.Windows.Forms.DataGridView();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
-            this.btnThem = new System.Windows.Forms.Button();
+            this.btnXem = new System.Windows.Forms.Button();
             this.lblTongTien = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.grdTK)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.grdDoanhThu)).BeginInit();
             this.SuspendLayout();
             // 
-            // grdTK
+            // grdDoanhThu
             // 
-            this.grdTK.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.grdDoanhThu.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.grdTK.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.grdTK.Location = new System.Drawing.Point(2, 49);
-            this.grdTK.Name = "grdTK";
-            this.grdTK.Size = new System.Drawing.Size(652, 404);
-            this.grdTK.TabIndex = 21;
+            this.grdDoanhThu.BackgroundColor = System.Drawing.Color.White;
+            this.grdDoanhThu.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.grdDoanhThu.Location = new System.Drawing.Point(2, 1);
+            this.grdDoanhThu.Name = "grdDoanhThu";
+            this.grdDoanhThu.Size = new System.Drawing.Size(652, 452);
+            this.grdDoanhThu.TabIndex = 21;
             // 
             // dateTimePicker1
             // 
             this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker1.Location = new System.Drawing.Point(114, 15);
+            this.dateTimePicker1.Location = new System.Drawing.Point(6, 462);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(109, 20);
             this.dateTimePicker1.TabIndex = 22;
+            this.dateTimePicker1.Value = new System.DateTime(2021, 6, 5, 10, 46, 0, 0);
             // 
             // dateTimePicker2
             // 
             this.dateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker2.Location = new System.Drawing.Point(438, 15);
+            this.dateTimePicker2.Location = new System.Drawing.Point(330, 462);
             this.dateTimePicker2.Name = "dateTimePicker2";
             this.dateTimePicker2.Size = new System.Drawing.Size(104, 20);
             this.dateTimePicker2.TabIndex = 23;
             // 
-            // btnThem
+            // btnXem
             // 
-            this.btnThem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.btnThem.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnThem.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnThem.ForeColor = System.Drawing.Color.White;
-            this.btnThem.Location = new System.Drawing.Point(282, 11);
-            this.btnThem.Name = "btnThem";
-            this.btnThem.Size = new System.Drawing.Size(97, 30);
-            this.btnThem.TabIndex = 35;
-            this.btnThem.Text = "Xem";
-            this.btnThem.UseVisualStyleBackColor = false;
+            this.btnXem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.btnXem.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnXem.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnXem.ForeColor = System.Drawing.Color.White;
+            this.btnXem.Location = new System.Drawing.Point(174, 456);
+            this.btnXem.Name = "btnXem";
+            this.btnXem.Size = new System.Drawing.Size(97, 30);
+            this.btnXem.TabIndex = 35;
+            this.btnXem.Text = "Xem";
+            this.btnXem.UseVisualStyleBackColor = false;
+            this.btnXem.Click += new System.EventHandler(this.btnXem_Click);
             // 
             // lblTongTien
             // 
@@ -84,7 +87,7 @@ namespace GUI
             this.lblTongTien.AutoSize = true;
             this.lblTongTien.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.lblTongTien.ForeColor = System.Drawing.Color.Black;
-            this.lblTongTien.Location = new System.Drawing.Point(76, 459);
+            this.lblTongTien.Location = new System.Drawing.Point(540, 458);
             this.lblTongTien.Name = "lblTongTien";
             this.lblTongTien.Size = new System.Drawing.Size(71, 22);
             this.lblTongTien.TabIndex = 98;
@@ -96,7 +99,7 @@ namespace GUI
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Times New Roman", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(6, 461);
+            this.label2.Location = new System.Drawing.Point(470, 460);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(64, 19);
             this.label2.TabIndex = 97;
@@ -109,14 +112,15 @@ namespace GUI
             this.ClientSize = new System.Drawing.Size(655, 489);
             this.Controls.Add(this.lblTongTien);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.btnThem);
+            this.Controls.Add(this.btnXem);
             this.Controls.Add(this.dateTimePicker2);
             this.Controls.Add(this.dateTimePicker1);
-            this.Controls.Add(this.grdTK);
+            this.Controls.Add(this.grdDoanhThu);
             this.Name = "frmThongKeDoanhThu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Thống kê doanh thu";
-            ((System.ComponentModel.ISupportInitialize)(this.grdTK)).EndInit();
+            this.Load += new System.EventHandler(this.frmThongKeDoanhThu_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.grdDoanhThu)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -124,10 +128,10 @@ namespace GUI
 
         #endregion
 
-        private System.Windows.Forms.DataGridView grdTK;
+        private System.Windows.Forms.DataGridView grdDoanhThu;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.DateTimePicker dateTimePicker2;
-        private System.Windows.Forms.Button btnThem;
+        private System.Windows.Forms.Button btnXem;
         private System.Windows.Forms.Label lblTongTien;
         private System.Windows.Forms.Label label2;
     }

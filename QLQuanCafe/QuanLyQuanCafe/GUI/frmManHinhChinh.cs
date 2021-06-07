@@ -16,9 +16,6 @@ namespace GUI
     public partial class frmManHinhChinh : Form
     {
         BUS_KhachHang BUS_KH = new BUS_KhachHang();
-        DTO_KhachHang DTO_KH = new DTO_KhachHang();
-        BUS_DoUong BUS_DoUong = new BUS_DoUong();
-        DTO_DoUong DTO_DoUong = new DTO_DoUong();
         BUS_HoaDon BUS_HD = new BUS_HoaDon();
         DTO_HoaDon DTO_HD = new DTO_HoaDon();
         public static bool luu = true;
@@ -90,6 +87,13 @@ namespace GUI
 
         private void frmManHinhChinh_Load(object sender, EventArgs e)
         {
+            if(frmDangNhap.Quyen_Luu == "NGUOIDUNG")
+            {
+                menutk_nv.Enabled = false;
+                menuban.Enabled = false;
+                menudo_uong.Enabled = false;
+                menudoanh_thu.Enabled = false;
+            }    
             btnBanDaChon.Text = "";
             txtMaTK_NV.Text = frmDangNhap.MaTK_NV_Luu;
             DanhSachKhachHang();
