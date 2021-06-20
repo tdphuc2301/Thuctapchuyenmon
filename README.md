@@ -1,41 +1,45 @@
-﻿# THỰC TẬP CHUYÊN MÔN NĂM HỌC 2020-2021
-Họ và tên: Trần Duy Phúc
+# TH?C T?P CHUY�N M�N N?M H?C 2020-2021
+H? v� t�n: Tr�?n Duy Phu?c
 MSSV: 5951071077	
      
-* Lớp: Công nghệ thông tin-K59
+* L?p: C�ng ngh? th�ng tin-K59
 
-## Đề tài: Chương trình quản lý quán Cafe
+## ?? t�i: Ch??ng tri?nh qua?n ly? qua?n Cafe
 
-Giảng viên: Thầy Nguyễn Lê Minh. 
+Gi?ng vi�n: Th?y Nguy?n L� Minh.?
 
-## Phần 1: Công nghệ sử dụng:
+## Ph?n 1: C�ng ngh? s? d?ng:
 Visual Studio 2019.
 
 Windows Form.
 
 Micosoft SQL Server. 
-  
-## Phần 2: Các chức năng đã hoàn thành:
-1. Xây dựng Cơ sở dữ liệu cho chương trình quản lí quán Cafe
-2. Xây dựng mô hình quản lý 3 lớp.
-3. Quản lý các danh mục, phân chia các món nước theo các thông tin cơ bản có sẵn.
-4. Hiển thị được số bàn, bàn nào có khách, bàn nào còn trống theo CSDL và thao tác trực tiếp.
-5. Hiển thị được danh sách đồ uống có tại bàn khách đang dùng.
-6. Quản lý đồ uống(thêm, sửa, xóa,...)
-7. Hiển thị tổng tiền khi khách thanh toán và chức năng thanh toán.
-8. Thống kê doanh thu theo từng ngày, từng tháng (có cho chọn theo mốc thời gian)
-9. Quản lý thông tin cá nhân (thêm, sửa, xóa,...)
-10. Phân quyền tài khoản (Admin và nhân viên)
-11. Các chức năng đăng nhập đã hoàn thiện.
+ ?
+## Ph?n 2: C�c ch?c n?ng ?� ho�n th�nh:
+1. X�y d?ng C? s? d? li?u cho ch??ng tri?nh qu?n l� qu�n Cafe
+2. X�y d??ng m� hi?nh qua?n ly? 3 l??p.
+3. Qua?n ly? ca?c danh mu?c, ph�n chia ca?c mo?n n???c theo ca?c th�ng tin c? ba?n co? s??n.
+4. Hi�?n thi? ????c s�? ba?n, ba?n na?o co? kha?ch, ba?n na?o co?n tr�?ng theo CSDL va? thao ta?c tr??c ti�?p.
+5. Hi�?n thi? ????c danh sa?ch ?�? u�?ng co? ta?i ba?n kha?ch ?ang du?ng.
+6. Qua?n ly? ?�? u�?ng(th�m, s??a, xo?a,...)
+7. Hi�?n thi? t�?ng ti�?n khi kha?ch thanh toa?n va? ch??c n?ng thanh toa?n.
+8. Th�?ng k� doanh thu theo t??ng nga?y, t??ng tha?ng (co? cho cho?n theo m�?c th??i gian)
+9. Qua?n ly? th�ng tin ca? nh�n (th�m, s??a, xo?a,...)
+10. Ph�n quy�?n ta?i khoa?n (Admin va? nh�n vi�n)
+11. Ca?c ch??c n?ng ??ng nh�?p ?a? hoa?n thi�?n.
+12. Qu?n l� t�i kho?n kh�ch h�ng (?�?i m�?t kh�?u, Thay ?�?i th�ng tin ca? nh�n,...)
+13. Xu?t file Excel
 
-## Phần 3: Các chức năng chưa hoàn thành:
-1. Mới chỉ hiện giá tiền thanh toán ở chương trình, chưa xuất bill để in ra cho khách được.
-2. Chưa thể đặt nhiều món trong cùng 1 bàn được, chỉ đặt từng món.
-3. Hiển thị hóa đơn.
-4. Chưa có chức năng chuyển bàn.
 
-## Hướng dẫn sử dụng:
-1. Chạy chương trình trước, đổi lại thông tin CSDL theo từng máy.
-2. Đăng nhập với tài khoản Admin
+## Ph?n 3: C�c ch?c n?ng ch?a ho�n th�nh:
+1. M??i chi? hi�?n gia? ti�?n thanh toa?n ?? ch??ng tri?nh, ch?a xu�?t bill ?�? in ra cho kha?ch ????c.
+2. Ch?a hi�?n thi? ????c ho?a ??n.
+3. Ch?a co? ch??c n?ng chuy�?n ba?n.
 
-Xin cám ơn!
+## H??ng d?n s? d?ng:
+1. T?i v? v� backup file CSDL
+2. M?? t�?p PMQuanLiQuanCafe cha?y ch??ng tri?nh PMQuanLiQuanCafe.exe
+3. ??ng nh?p t�i kho?n (admin/000) ?? s? d?ng
+4. Sau khi s? d?ng xong, click n�t Logout ?? tho�t kh?i ch??ng tr�nh
+
+Xin c�m ?n!
