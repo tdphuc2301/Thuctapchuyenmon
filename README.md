@@ -28,7 +28,7 @@ Micosoft SQL Server.
 10. Phân quyền tài khoản (Admin và nhân viên)
 11. Các chức năng đăng nhập đã hoàn thiện.
 12. Quản lí toàn khoản khách hàng, nhân viên (Đổi mật khẩu, Thay đổi các thông tin cá nhân,…)
-13. Xuất Excel tất cả các dữ liệu theo từng quy tr
+13. Xuất Excel tất cả các dữ liệu theo từng quy trình.
 
 ## Phần 3: Các chức năng chưa hoàn thành:
 1. Chỉ hiển thị giá trong chương trình, chưa xuất bill được để đưa cho khách
