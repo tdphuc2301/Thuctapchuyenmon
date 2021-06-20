@@ -40,9 +40,9 @@ Micosoft SQL Server.
 
 • Mở tệp PMQuanLyQuanCafe và chạy file PMQuanLyQuanCafe.exe
 
-• Đăng nhập tài khoản (dmin/000) theo phân quyền admin để sử dụng.
+• Đăng nhập tài khoản (admin/000) theo phân quyền admin để sử dụng.
 
-• Sau khi sử dụng xong, click nut Đăng xuất và Thoát để thoát khỏi chương trình. Chỉ hiển thị giá trong chương trình, chưa xuất bill được để đưa cho khách
+• Sau khi sử dụng xong, click nút Đăng xuất và Thoát để thoát khỏi chương trình. Chỉ hiển thị giá trong chương trình, chưa xuất bill được để đưa cho khách
 
 Xin cám ơn!
 
