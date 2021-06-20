@@ -1,45 +1,46 @@
-# TH?C T?P CHUYÊN MÔN N?M H?C 2020-2021
-H? và tên: Trâ?n Duy Phu?c
+# THU?C TÂ?P CHUYÊN MÔN NAM HO?C 2020-2021
+Ho? và tên: Trâ`n Duy Phu´c
 MSSV: 5951071077	
      
-* L?p: Công ngh? thông tin-K59
+* Lo´p: Công nghê? thông tin-K59
 
-## ?? tài: Ch??ng tri?nh qua?n ly? qua?n Cafe
+## Ðê` tài: Chuong tri`nh qua?n ly´ qua´n Cafe
 
-Gi?ng viên: Th?y Nguy?n Lê Minh.?
+Gia?ng viên: Thâ`y Nguyê~n Lê Minh
 
-## Ph?n 1: Công ngh? s? d?ng:
+## Phâ`n 1: Công nghê? su? du?ng:
 Visual Studio 2019.
 
 Windows Form.
 
 Micosoft SQL Server. 
- ?
-## Ph?n 2: Các ch?c n?ng ?ã hoàn thành:
-1. Xây d?ng C? s? d? li?u cho ch??ng tri?nh qu?n lí quán Cafe
-2. Xây d??ng mô hi?nh qua?n ly? 3 l??p.
-3. Qua?n ly? ca?c danh mu?c, phân chia ca?c mo?n n???c theo ca?c thông tin c? ba?n co? s??n.
-4. Hiê?n thi? ????c sô? ba?n, ba?n na?o co? kha?ch, ba?n na?o co?n trô?ng theo CSDL va? thao ta?c tr??c tiê?p.
-5. Hiê?n thi? ????c danh sa?ch ?ô? uô?ng co? ta?i ba?n kha?ch ?ang du?ng.
-6. Qua?n ly? ?ô? uô?ng(thêm, s??a, xo?a,...)
-7. Hiê?n thi? tô?ng tiê?n khi kha?ch thanh toa?n va? ch??c n?ng thanh toa?n.
-8. Thô?ng kê doanh thu theo t??ng nga?y, t??ng tha?ng (co? cho cho?n theo mô?c th??i gian)
-9. Qua?n ly? thông tin ca? nhân (thêm, s??a, xo?a,...)
-10. Phân quyê?n ta?i khoa?n (Admin va? nhân viên)
-11. Ca?c ch??c n?ng ??ng nhâ?p ?a? hoa?n thiê?n.
-12. Qu?n lí tài kho?n khách hàng (?ô?i mâ?t khâ?u, Thay ?ô?i thông tin ca? nhân,...)
-13. Xu?t file Excel
+ 
+## Ph?n 2: Các ch?c nang dã hoàn thành:
+1. Xây d?ng Co s? d? li?u cho chuong tri`nh qu?n lí quán Cafe
+2. Xây du?ng mô hi`nh qua?n ly´ 3 lo´p.
+3. Qua?n ly´ ca´c danh mu?c, phân chia ca´c mo´n nuo´c theo ca´c thông tin co ba?n co´ sa~n.
+4. Hiê?n thi? duo?c sô´ ba`n, ba`n na`o co´ kha´ch, ba`n na`o co`n trô´ng theo CSDL va` thao ta´c tru?c tiê´p.
+5. Hiê?n thi? duo?c danh sa´ch dô` uô´ng co´ ta?i ba`n kha´ch dang du`ng.
+6. Qua?n ly´ dô` uô´ng(thêm, su?a, xo´a,...)
+7. Hiê?n thi? tô?ng tiê`n khi kha´ch thanh toa´n va` chu´c nang thanh toa´n.
+8. Thô´ng kê doanh thu theo tu`ng nga`y, tu`ng tha´ng (co´ cho cho?n theo mô´c tho`i gian)
+9. Qua?n ly´ thông tin ca´ nhân (thêm, su?a, xo´a,...)
+10. Phân quyê`n ta`i khoa?n (Admin va` nhân viên)
+11. Ca´c chu´c nang dang nhâ?p da~ hoa`n thiê?n.
+12. Qua?n lí tài khoa?n khách hàng (Ðô?i mâ?t khâ?u, Thay dô?i thông tin ca´ nhân,...)
+13. Xuâ´t file Excel
 
 
-## Ph?n 3: Các ch?c n?ng ch?a hoàn thành:
-1. M??i chi? hiê?n gia? tiê?n thanh toa?n ?? ch??ng tri?nh, ch?a xuâ?t bill ?ê? in ra cho kha?ch ????c.
-2. Ch?a hiê?n thi? ????c ho?a ??n.
-3. Ch?a co? ch??c n?ng chuyê?n ba?n.
+## Ph?n 3: Các ch?c nang chua hoàn thành:
+1. Mo´i chi? hiê?n gia´ tiê`n thanh toa´n o? chuong tri`nh, chua xuâ´t bill dê? in ra cho kha´ch duo?c.
+2. Chua thê? da?t nhiê`u mo´n trong cu`ng 1 ba`n duo?c, chi? da?t tu`ng mo´n.
+3. Chua co´ chu´c nang chuyê?n ba`n.
 
-## H??ng d?n s? d?ng:
-1. T?i v? và backup file CSDL
-2. M?? tê?p PMQuanLiQuanCafe cha?y ch??ng tri?nh PMQuanLiQuanCafe.exe
-3. ??ng nh?p tài kho?n (admin/000) ?? s? d?ng
-4. Sau khi s? d?ng xong, click nút Logout ?? thoát kh?i ch??ng trình
 
-Xin cám ?n!
+## Hu?ng d?n s? d?ng:
+1. Ta?i vê` và backup CSDL
+2. Mo? tê?p PMQuanLiQuanCafe cha?y chuong tri`nh PMQuanLiQuanCafe.exe
+3. Ðang nhâ?p tài khoa?n (admin/000) dê? su? du?ng
+4. Sau khi su? du?ng xong, click nút Ðang xuâ´t va` thoát dê? thoa´t kho?i chuong trình
+
+Xin cám on!
