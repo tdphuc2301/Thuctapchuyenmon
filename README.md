@@ -37,8 +37,11 @@ Micosoft SQL Server.
 
 ## Hướng dẫn sử dụng:
 • Tải về và Backup CSDL.
+
 • Mở tệp PMQuanLyQuanCafe và chạy file PMQuanLyQuanCafe.exe
+
 • Đăng nhập tài khoản (dmin/000) theo phân quyền admin để sử dụng.
+
 • Sau khi sử dụng xong, click nut Đăng xuất và Thoát để thoát khỏi chương trình. Chỉ hiển thị giá trong chương trình, chưa xuất bill được để đưa cho khách
 
 Xin cám ơn!
