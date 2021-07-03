@@ -29,6 +29,7 @@ namespace GUI
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmBan));
             this.btnThoat = new System.Windows.Forms.Button();
             this.btnLamMoi = new System.Windows.Forms.Button();
             this.btnXuatExcel = new System.Windows.Forms.Button();
@@ -46,19 +47,20 @@ namespace GUI
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.btnXoaTrang = new System.Windows.Forms.Button();
+            this.btnHome1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.grdBan)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nmSoLuongNguoi)).BeginInit();
             this.SuspendLayout();
             // 
             // btnThoat
             // 
-            this.btnThoat.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.btnThoat.BackColor = System.Drawing.SystemColors.MenuHighlight;
             this.btnThoat.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnThoat.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnThoat.ForeColor = System.Drawing.Color.White;
-            this.btnThoat.Location = new System.Drawing.Point(514, 66);
+            this.btnThoat.ForeColor = System.Drawing.Color.Black;
+            this.btnThoat.Location = new System.Drawing.Point(733, 102);
             this.btnThoat.Name = "btnThoat";
-            this.btnThoat.Size = new System.Drawing.Size(97, 30);
+            this.btnThoat.Size = new System.Drawing.Size(76, 30);
             this.btnThoat.TabIndex = 39;
             this.btnThoat.Text = "Thoát";
             this.btnThoat.UseVisualStyleBackColor = false;
@@ -66,11 +68,11 @@ namespace GUI
             // 
             // btnLamMoi
             // 
-            this.btnLamMoi.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.btnLamMoi.BackColor = System.Drawing.Color.Cyan;
             this.btnLamMoi.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnLamMoi.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLamMoi.ForeColor = System.Drawing.Color.White;
-            this.btnLamMoi.Location = new System.Drawing.Point(411, 66);
+            this.btnLamMoi.ForeColor = System.Drawing.Color.Black;
+            this.btnLamMoi.Location = new System.Drawing.Point(573, 188);
             this.btnLamMoi.Name = "btnLamMoi";
             this.btnLamMoi.Size = new System.Drawing.Size(97, 30);
             this.btnLamMoi.TabIndex = 38;
@@ -80,11 +82,11 @@ namespace GUI
             // 
             // btnXuatExcel
             // 
-            this.btnXuatExcel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.btnXuatExcel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.btnXuatExcel.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnXuatExcel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnXuatExcel.ForeColor = System.Drawing.Color.White;
-            this.btnXuatExcel.Location = new System.Drawing.Point(308, 64);
+            this.btnXuatExcel.Location = new System.Drawing.Point(702, 188);
             this.btnXuatExcel.Name = "btnXuatExcel";
             this.btnXuatExcel.Size = new System.Drawing.Size(97, 30);
             this.btnXuatExcel.TabIndex = 37;
@@ -94,11 +96,11 @@ namespace GUI
             // 
             // btnXoa
             // 
-            this.btnXoa.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.btnXoa.BackColor = System.Drawing.Color.Cyan;
             this.btnXoa.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnXoa.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnXoa.ForeColor = System.Drawing.Color.White;
-            this.btnXoa.Location = new System.Drawing.Point(514, 28);
+            this.btnXoa.ForeColor = System.Drawing.Color.Black;
+            this.btnXoa.Location = new System.Drawing.Point(326, 188);
             this.btnXoa.Name = "btnXoa";
             this.btnXoa.Size = new System.Drawing.Size(97, 30);
             this.btnXoa.TabIndex = 36;
@@ -108,11 +110,11 @@ namespace GUI
             // 
             // btnSua
             // 
-            this.btnSua.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.btnSua.BackColor = System.Drawing.Color.Cyan;
             this.btnSua.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnSua.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSua.ForeColor = System.Drawing.Color.White;
-            this.btnSua.Location = new System.Drawing.Point(411, 28);
+            this.btnSua.ForeColor = System.Drawing.Color.Black;
+            this.btnSua.Location = new System.Drawing.Point(205, 188);
             this.btnSua.Name = "btnSua";
             this.btnSua.Size = new System.Drawing.Size(97, 30);
             this.btnSua.TabIndex = 35;
@@ -122,11 +124,11 @@ namespace GUI
             // 
             // btnThem
             // 
-            this.btnThem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.btnThem.BackColor = System.Drawing.Color.Cyan;
             this.btnThem.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnThem.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnThem.ForeColor = System.Drawing.Color.White;
-            this.btnThem.Location = new System.Drawing.Point(308, 28);
+            this.btnThem.ForeColor = System.Drawing.Color.Black;
+            this.btnThem.Location = new System.Drawing.Point(75, 188);
             this.btnThem.Name = "btnThem";
             this.btnThem.Size = new System.Drawing.Size(97, 30);
             this.btnThem.TabIndex = 34;
@@ -136,13 +138,13 @@ namespace GUI
             // 
             // btnTimKiem
             // 
-            this.btnTimKiem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.btnTimKiem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.btnTimKiem.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnTimKiem.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnTimKiem.ForeColor = System.Drawing.Color.White;
-            this.btnTimKiem.Location = new System.Drawing.Point(120, 99);
+            this.btnTimKiem.Location = new System.Drawing.Point(712, 30);
             this.btnTimKiem.Name = "btnTimKiem";
-            this.btnTimKiem.Size = new System.Drawing.Size(97, 30);
+            this.btnTimKiem.Size = new System.Drawing.Size(97, 23);
             this.btnTimKiem.TabIndex = 33;
             this.btnTimKiem.Text = "Tìm kiếm";
             this.btnTimKiem.UseVisualStyleBackColor = false;
@@ -150,59 +152,67 @@ namespace GUI
             // 
             // txtTenBan
             // 
-            this.txtTenBan.Location = new System.Drawing.Point(150, 28);
+            this.txtTenBan.Font = new System.Drawing.Font("Times New Roman", 14.25F);
+            this.txtTenBan.Location = new System.Drawing.Point(357, 62);
+            this.txtTenBan.Multiline = true;
             this.txtTenBan.Name = "txtTenBan";
-            this.txtTenBan.Size = new System.Drawing.Size(141, 20);
+            this.txtTenBan.Size = new System.Drawing.Size(313, 28);
             this.txtTenBan.TabIndex = 24;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(13, 31);
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(234, 69);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(47, 13);
+            this.label2.Size = new System.Drawing.Size(71, 21);
             this.label2.TabIndex = 23;
             this.label2.Text = "Tên bàn";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // txtMaBan
             // 
-            this.txtMaBan.Location = new System.Drawing.Point(150, 5);
+            this.txtMaBan.Font = new System.Drawing.Font("Times New Roman", 14.25F);
+            this.txtMaBan.Location = new System.Drawing.Point(357, 19);
+            this.txtMaBan.Multiline = true;
             this.txtMaBan.Name = "txtMaBan";
-            this.txtMaBan.Size = new System.Drawing.Size(141, 20);
+            this.txtMaBan.Size = new System.Drawing.Size(313, 30);
             this.txtMaBan.TabIndex = 22;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(13, 8);
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(234, 28);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(43, 13);
+            this.label1.Size = new System.Drawing.Size(66, 21);
             this.label1.TabIndex = 21;
             this.label1.Text = "Mã bàn";
             // 
             // grdBan
             // 
-            this.grdBan.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.grdBan.BackgroundColor = System.Drawing.Color.White;
             this.grdBan.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.grdBan.Location = new System.Drawing.Point(2, 135);
+            this.grdBan.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.grdBan.Location = new System.Drawing.Point(0, 224);
             this.grdBan.Name = "grdBan";
-            this.grdBan.Size = new System.Drawing.Size(685, 311);
+            this.grdBan.Size = new System.Drawing.Size(817, 293);
             this.grdBan.TabIndex = 20;
             this.grdBan.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.grdBan_CellClick);
             // 
             // nmSoLuongNguoi
             // 
-            this.nmSoLuongNguoi.Location = new System.Drawing.Point(149, 51);
+            this.nmSoLuongNguoi.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nmSoLuongNguoi.Location = new System.Drawing.Point(357, 96);
             this.nmSoLuongNguoi.Maximum = new decimal(new int[] {
             1000000000,
             0,
             0,
             0});
             this.nmSoLuongNguoi.Name = "nmSoLuongNguoi";
-            this.nmSoLuongNguoi.Size = new System.Drawing.Size(142, 20);
+            this.nmSoLuongNguoi.Size = new System.Drawing.Size(313, 29);
             this.nmSoLuongNguoi.TabIndex = 55;
             this.nmSoLuongNguoi.Value = new decimal(new int[] {
             1,
@@ -212,36 +222,42 @@ namespace GUI
             // 
             // txtGhiChu
             // 
-            this.txtGhiChu.Location = new System.Drawing.Point(149, 73);
+            this.txtGhiChu.Font = new System.Drawing.Font("Times New Roman", 14.25F);
+            this.txtGhiChu.Location = new System.Drawing.Point(357, 141);
+            this.txtGhiChu.Multiline = true;
             this.txtGhiChu.Name = "txtGhiChu";
-            this.txtGhiChu.Size = new System.Drawing.Size(141, 20);
+            this.txtGhiChu.Size = new System.Drawing.Size(313, 28);
             this.txtGhiChu.TabIndex = 54;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(12, 77);
+            this.label5.BackColor = System.Drawing.Color.Transparent;
+            this.label5.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(236, 148);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(44, 13);
+            this.label5.Size = new System.Drawing.Size(69, 21);
             this.label5.TabIndex = 53;
             this.label5.Text = "Ghi chú";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(12, 54);
+            this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.label4.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(222, 104);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(78, 13);
+            this.label4.Size = new System.Drawing.Size(125, 21);
             this.label4.TabIndex = 52;
             this.label4.Text = "Số lượng người";
             // 
             // btnXoaTrang
             // 
-            this.btnXoaTrang.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.btnXoaTrang.BackColor = System.Drawing.Color.Cyan;
             this.btnXoaTrang.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnXoaTrang.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnXoaTrang.ForeColor = System.Drawing.Color.White;
-            this.btnXoaTrang.Location = new System.Drawing.Point(223, 100);
+            this.btnXoaTrang.ForeColor = System.Drawing.Color.Black;
+            this.btnXoaTrang.Location = new System.Drawing.Point(443, 188);
             this.btnXoaTrang.Name = "btnXoaTrang";
             this.btnXoaTrang.Size = new System.Drawing.Size(97, 30);
             this.btnXoaTrang.TabIndex = 56;
@@ -249,11 +265,25 @@ namespace GUI
             this.btnXoaTrang.UseVisualStyleBackColor = false;
             this.btnXoaTrang.Click += new System.EventHandler(this.btnXoaTrang_Click);
             // 
+            // btnHome1
+            // 
+            this.btnHome1.BackgroundImage = global::GUI.Properties.Resources.logo1;
+            this.btnHome1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnHome1.Location = new System.Drawing.Point(47, 30);
+            this.btnHome1.Name = "btnHome1";
+            this.btnHome1.Size = new System.Drawing.Size(90, 80);
+            this.btnHome1.TabIndex = 105;
+            this.btnHome1.UseVisualStyleBackColor = true;
+            this.btnHome1.Click += new System.EventHandler(this.btnHome1_Click);
+            // 
             // frmBan
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(688, 450);
+            this.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.ClientSize = new System.Drawing.Size(817, 517);
+            this.Controls.Add(this.btnHome1);
             this.Controls.Add(this.btnXoaTrang);
             this.Controls.Add(this.nmSoLuongNguoi);
             this.Controls.Add(this.txtGhiChu);
@@ -271,6 +301,7 @@ namespace GUI
             this.Controls.Add(this.txtMaBan);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.grdBan);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmBan";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Danh mục bàn";
@@ -301,5 +332,6 @@ namespace GUI
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button btnXoaTrang;
+        private System.Windows.Forms.Button btnHome1;
     }
 }

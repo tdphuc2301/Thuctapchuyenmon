@@ -29,6 +29,7 @@ namespace GUI
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmLichSuHoaDon));
             this.btnXem = new System.Windows.Forms.Button();
             this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
@@ -41,7 +42,7 @@ namespace GUI
             // 
             // btnXem
             // 
-            this.btnXem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.btnXem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.btnXem.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnXem.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnXem.ForeColor = System.Drawing.Color.White;
@@ -102,6 +103,7 @@ namespace GUI
             this.lblTongTien.Size = new System.Drawing.Size(71, 22);
             this.lblTongTien.TabIndex = 96;
             this.lblTongTien.Text = "O VNĐ";
+            this.lblTongTien.Click += new System.EventHandler(this.lblTongTien_Click);
             // 
             // label2
             // 
@@ -127,6 +129,7 @@ namespace GUI
             this.Controls.Add(this.dateTimePicker2);
             this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.grdHoaDon);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmLichSuHoaDon";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Lịch sử hóa đơn";

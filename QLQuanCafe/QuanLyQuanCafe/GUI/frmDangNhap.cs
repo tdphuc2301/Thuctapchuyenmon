@@ -22,46 +22,9 @@ namespace GUI
             InitializeComponent();
         }
 
-        private void btnThoat_Click(object sender, EventArgs e)
-        {
-            DialogResult dr = MessageBox.Show("Bạn có muốn thoát ?", "Xác nhận", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-            if (dr == DialogResult.Yes)
-            {
-                this.Close();
-            }
-            else
-                return;
-        }
+       
 
-        private void btnDangNhap_Click(object sender, EventArgs e)
-        {
-            if (txtMaDangNhap.Text == "")
-            {
-                MessageBox.Show("Mã đăng nhập không được trống", "Thông báo",
-                MessageBoxButtons.OK, MessageBoxIcon.Error);
-                txtMaDangNhap.Focus();
-                return;
-            }
-            if (txtMatKhau.Text == "")
-            {
-                MessageBox.Show("Mật khẩu không được trống", "Thông báo",
-                MessageBoxButtons.OK, MessageBoxIcon.Error);
-                txtMatKhau.Focus();
-                return;
-            }
-            if (BUS.DangNhapChuongTrinh(txtMaDangNhap.Text, txtMatKhau.Text, cboQuyen.SelectedValue.ToString()) == null || BUS.DangNhapChuongTrinh(txtMaDangNhap.Text, txtMatKhau.Text, cboQuyen.SelectedValue.ToString()).Rows.Count == 0)
-            {
-                MessageBox.Show("Thông tin tài khoản không đúng", "Thông báo",
-                MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return;
-            }
-            //this.Hide();
-            frmManHinhChinh f = new frmManHinhChinh();
-            MaTK_NV_Luu = txtMaDangNhap.Text;
-            MatKhau_Luu = txtMatKhau.Text;
-            Quyen_Luu = cboQuyen.SelectedValue.ToString();
-            f.Show();
-        }
+        
 
         private void frmDangNhap_Load(object sender, EventArgs e)
         {
@@ -79,6 +42,62 @@ namespace GUI
         private void pictureBox1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void pictureBox4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtMatKhau_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+       
+        private void btnLogin_Click(object sender, EventArgs e)
+        {
+            if (txtMaDangNhap.Text == "")
+            {
+                MessageBox.Show("Mã đăng nhập không được trống", "Thông báo",
+                MessageBoxButtons.OK, MessageBoxIcon.Error);
+                txtMaDangNhap.Focus();
+                return;
+            }
+            else if (txtMatKhau.Text == "")
+            {
+                MessageBox.Show("Mật khẩu không được trống", "Thông báo",
+                MessageBoxButtons.OK, MessageBoxIcon.Error);
+                txtMatKhau.Focus();
+                return;
+            }
+            else if (BUS.DangNhapChuongTrinh(txtMaDangNhap.Text, txtMatKhau.Text, cboQuyen.SelectedValue.ToString()) == null || BUS.DangNhapChuongTrinh(txtMaDangNhap.Text, txtMatKhau.Text, cboQuyen.SelectedValue.ToString()).Rows.Count == 0)
+            {
+                MessageBox.Show("Thông tin tài khoản không đúng", "Thông báo",
+                MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+            else
+            {
+                this.Hide();
+                frmHome1 f = new frmHome1();
+                MaTK_NV_Luu = txtMaDangNhap.Text;
+                MatKhau_Luu = txtMatKhau.Text;
+                Quyen_Luu = cboQuyen.SelectedValue.ToString();
+                f.Show();
+            }
+            
+        }
+
+        private void btnThoat_Click_1(object sender, EventArgs e)
+        {
+            DialogResult dr = MessageBox.Show("Bạn có muốn thoát ?", "Xác nhận", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (dr == DialogResult.Yes)
+            {
+                this.Close();
+            }
+            else
+                return;
         }
     }
 }

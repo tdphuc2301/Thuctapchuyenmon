@@ -102,5 +102,15 @@ namespace GUI
                 return 0;
             return 1;
         }
+
+        private void txtMaDo_Uong_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void nmSoLuongTon_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

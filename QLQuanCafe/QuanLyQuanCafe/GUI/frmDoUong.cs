@@ -151,5 +151,15 @@ namespace GUI
             nmSoLuongTon.Value = 0;
             txtGhiChu.Text = "";
         }
+
+        private void txtMaDo_Uong_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

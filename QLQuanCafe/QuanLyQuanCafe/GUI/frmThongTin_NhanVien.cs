@@ -164,5 +164,12 @@ namespace GUI
             txtSoDienThoai.Text = "";
             txtDiaChi.Text = "";
         }
+
+        private void btnHome1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            frmHome1 home = new frmHome1();
+            home.ShowDialog();
+        }
     }
 }

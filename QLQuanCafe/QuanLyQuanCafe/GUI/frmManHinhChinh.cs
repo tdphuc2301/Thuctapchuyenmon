@@ -32,68 +32,72 @@ namespace GUI
             InitializeComponent();
         }
 
-        private void menutk_nv_Click(object sender, EventArgs e)
-        {
-            frmThongTin_NhanVien frm = new frmThongTin_NhanVien();
-            frm.ShowDialog();
-        }
+        //private void menutk_nv_Click(object sender, EventArgs e)
+        //{
+         
+        //    frmThongTin_NhanVien frm = new frmThongTin_NhanVien();
+        //    frm.ShowDialog();
+        //}
 
-        private void menuttcn_Click(object sender, EventArgs e)
-        {
-            frmThongTin_CaNhan frm = new frmThongTin_CaNhan();
-            frm.ShowDialog();
-        }
+        //private void menuttcn_Click(object sender, EventArgs e)
+        //{
+            
+        //    frmThongTin_CaNhan frm = new frmThongTin_CaNhan();
+        //    frm.ShowDialog();
+        //}
 
-        private void menudo_uong_Click(object sender, EventArgs e)
-        {
-            frmDoUong frm = new frmDoUong();
-            frm.ShowDialog();
-        }
+        //private void menudo_uong_Click(object sender, EventArgs e)
+        //{
+            
+        //    frmDoUong frm = new frmDoUong();
+        //    frm.ShowDialog();
+        //}
 
-        private void menukhach_hang_Click(object sender, EventArgs e)
-        {
-            frmKhachHang frm = new frmKhachHang();
-            frm.ShowDialog();
-        }
+        //private void menukhach_hang_Click(object sender, EventArgs e)
+        //{
 
-        private void menuban_Click(object sender, EventArgs e)
-        {
-            frmBan frm = new frmBan();
-            frm.ShowDialog();
-        }
+        //    frmKhachHang frm = new frmKhachHang();
+        //    frm.ShowDialog();
+        //}
 
-        private void menudoanh_thu_Click(object sender, EventArgs e)
-        {
-            frmThongKeDoanhThu frm = new frmThongKeDoanhThu();
-            frm.ShowDialog();
-        }
+        //private void menuban_Click(object sender, EventArgs e)
+        //{
+        //    frmBan frm = new frmBan();
+        //    frm.ShowDialog();
+        //}
 
-        private void menu_lich_su_hd_Click(object sender, EventArgs e)
-        {
-            frmLichSuHoaDon frm = new frmLichSuHoaDon();
-            frm.ShowDialog();
-        }
+        //private void menudoanh_thu_Click(object sender, EventArgs e)
+        //{
+        //    frmThongKeDoanhThu frm = new frmThongKeDoanhThu();
+        //    frm.ShowDialog();
+        //}
 
-        private void menudang_xuat_Click(object sender, EventArgs e)
-        {
-            DialogResult dr = MessageBox.Show("Bạn có chắc chắn đăng xuất chương trình không ?", "Xác nhận", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-            if (dr == DialogResult.Yes)
-            {
-                this.Close();
-            }
-            else
-                return;
-        }
+        //private void menu_lich_su_hd_Click(object sender, EventArgs e)
+        //{
+        //    frmLichSuHoaDon frm = new frmLichSuHoaDon();
+        //    frm.ShowDialog();
+        //}
+
+        //private void menudang_xuat_Click(object sender, EventArgs e)
+        //{
+        //    DialogResult dr = MessageBox.Show("Bạn có chắc chắn đăng xuất chương trình không ?", "Xác nhận", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+        //    if (dr == DialogResult.Yes)
+        //    {
+        //        this.Close();
+        //    }
+        //    else
+        //        return;
+        //}
 
         private void frmManHinhChinh_Load(object sender, EventArgs e)
         {
-            if(frmDangNhap.Quyen_Luu == "NGUOIDUNG")
-            {
-                menutk_nv.Enabled = false;
-                menuban.Enabled = false;
-                menudo_uong.Enabled = false;
-                menudoanh_thu.Enabled = false;
-            }    
+            //if (frmDangNhap.Quyen_Luu == "NGUOIDUNG")
+            //{
+            //    menutk_nv.Enabled = false;
+            //    menuban.Enabled = false;
+            //    menudo_uong.Enabled = false;
+            //    menudoanh_thu.Enabled = false;
+            //}
             btnBanDaChon.Text = "";
             txtMaTK_NV.Text = frmDangNhap.MaTK_NV_Luu;
             DanhSachKhachHang();
@@ -292,6 +296,19 @@ namespace GUI
                 }
             }
             catch { MessageBox.Show("Bạn chưa chọn bàn thanh toán", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information); }
+        }
+
+        private void hệThốngToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnHome1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            frmHome1 home = new frmHome1();
+            home.ShowDialog();
+            
         }
     }
 }

@@ -81,5 +81,12 @@ namespace GUI
             MessageBox.Show("Đổi mật khẩu thành công ", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information, MessageBoxDefaultButton.Button1);
             this.Close();
         }
+
+        private void btnHome1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            frmHome1 home = new frmHome1();
+            home.ShowDialog();
+        }
     }
 }

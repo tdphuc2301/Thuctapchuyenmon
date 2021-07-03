@@ -145,5 +145,18 @@ namespace GUI
                 txtGhiChu.Text = row.Cells[3].Value.ToString();
             }
         }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnHome1_Click(object sender, EventArgs e)
+        {
+           
+            frmHome1 home = new frmHome1();
+            home.ShowDialog();
+
+        }
     }
 }

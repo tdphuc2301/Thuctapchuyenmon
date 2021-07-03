@@ -68,5 +68,10 @@ namespace GUI
         {
             DanhSachBan();
         }
+
+        private void lblTongTien_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

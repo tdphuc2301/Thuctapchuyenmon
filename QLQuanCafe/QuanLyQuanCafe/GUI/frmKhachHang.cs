@@ -146,5 +146,17 @@ namespace GUI
             grdKH.Columns[2].Width = 100;
             grdKH.Columns[3].Width = 100;
         }
+
+        private void btnHome1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnHome1_Click_1(object sender, EventArgs e)
+        {
+            this.Hide();
+            frmHome1 home = new frmHome1();
+            home.ShowDialog();
+        }
     }
 }

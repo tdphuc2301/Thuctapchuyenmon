@@ -32,13 +32,22 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>QLCF.ico</ApplicationIcon>
+  </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Bunifu_UI_v1.5.3, Version=1.5.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Bunifu_UI_v1.5.3.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.Office.Interop.Excel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.Office.Interop.Excel.15.0.4795.1000\lib\net20\Microsoft.Office.Interop.Excel.dll</HintPath>
       <EmbedInteropTypes>True</EmbedInteropTypes>
     </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Management" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -85,6 +94,12 @@
     </Compile>
     <Compile Include="frmHoaDon_Sua.Designer.cs">
       <DependentUpon>frmHoaDon_Sua.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmHome1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmHome1.Designer.cs">
+      <DependentUpon>frmHome1.cs</DependentUpon>
     </Compile>
     <Compile Include="frmKhachHang.cs">
       <SubType>Form</SubType>
@@ -154,6 +169,9 @@
     <EmbeddedResource Include="frmHoaDon_Sua.resx">
       <DependentUpon>frmHoaDon_Sua.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmHome1.resx">
+      <DependentUpon>frmHome1.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmKhachHang.resx">
       <DependentUpon>frmKhachHang.cs</DependentUpon>
     </EmbeddedResource>
@@ -186,6 +204,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -214,6 +233,48 @@
       <Project>{137AE42E-624A-47B0-BE53-EA1EF5682FA8}</Project>
       <Name>DTO</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\v926-adj-031-g-b.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\coffee-time-background-with-cup-plate_79603-1457.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn2.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dang nhap.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\thoat.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn1.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo1.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngwing.com.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\unnamed.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rsz_60df381394918.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rsz_60df399f96a89.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rsz_60df3d60cb6c1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rsz_60df3d8c5366d.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="QLCF.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

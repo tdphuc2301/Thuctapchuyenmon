@@ -124,5 +124,10 @@ namespace GUI
                 nmDonGia.Value = decimal.Parse(dtGia.Rows[0]["DonGia"].ToString() + "");
             }
         }
+
+        private void nmDonGia_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -97,5 +97,15 @@ namespace GUI
                 txtDiaChi.Text = frmKhachHang.DiaChi;
             }
         }
+
+        private void txtSoDienThoai_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtDiaChi_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
