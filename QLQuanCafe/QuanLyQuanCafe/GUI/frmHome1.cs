@@ -120,5 +120,23 @@ namespace GUI
                 menudoanh_thu.Enabled = false;
             }
         }
+
+        private void đóngGópToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmdonggop f = new frmdonggop();
+            this.Hide();
+            f.ShowDialog();
+
+            this.Show();
+        }
+
+        private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmqr f = new frmqr();
+            this.Hide();
+            f.ShowDialog();
+
+            this.Show();
+        }
     }
 }

@@ -59,6 +59,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="frmqr.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmqr.Designer.cs">
+      <DependentUpon>frmqr.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmdonggop.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmdonggop.Designer.cs">
+      <DependentUpon>frmdonggop.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmBan.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -151,6 +163,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmqr.resx">
+      <DependentUpon>frmqr.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmdonggop.resx">
+      <DependentUpon>frmdonggop.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmBan.resx">
       <DependentUpon>frmBan.cs</DependentUpon>
     </EmbeddedResource>
@@ -275,6 +293,10 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="QLCF.ico" />
+    <None Include="Resources\dưqdqwd.PNG" />
+    <None Include="Resources\z2592520270433_dac1e6ce48bbb80cd8bf8bceaf78ea861.jpg" />
+    <None Include="Resources\z2592520270433_dac1e6ce48bbb80cd8bf8bceaf78ea86.jpg" />
+    <None Include="Resources\Capture.PNG" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

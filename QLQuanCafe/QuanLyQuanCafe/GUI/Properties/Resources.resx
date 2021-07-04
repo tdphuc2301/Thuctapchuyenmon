@@ -124,6 +124,9 @@
   <data name="rsz_60df3d60cb6c1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\rsz_60df3d60cb6c1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="z2592520270433_dac1e6ce48bbb80cd8bf8bceaf78ea861" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\z2592520270433_dac1e6ce48bbb80cd8bf8bceaf78ea861.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="btn2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\btn2.JPG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -139,14 +142,23 @@
   <data name="btn1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\btn1.JPG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Capture" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Capture.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="dang nhap" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\dang nhap.JPG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="logo1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\logo1.JPG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="z2592520270433_dac1e6ce48bbb80cd8bf8bceaf78ea86" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\z2592520270433_dac1e6ce48bbb80cd8bf8bceaf78ea86.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="rsz_60df381394918" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\rsz_60df381394918.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="rsz_60df3d8c5366d" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\rsz_60df3d8c5366d.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="thoat" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\thoat.JPG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -157,7 +169,7 @@
   <data name="rsz_60df399f96a89" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\rsz_60df399f96a89.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="rsz_60df3d8c5366d" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\rsz_60df3d8c5366d.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="dưqdqwd" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\dưqdqwd.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
