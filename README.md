@@ -29,11 +29,11 @@ Micosoft SQL Server.
 11. Các chức năng đăng nhập đã hoàn thiện.
 12. Quản lí toàn khoản khách hàng, nhân viên (Đổi mật khẩu, Thay đổi các thông tin cá nhân,…)
 13. Xuất Excel tất cả các dữ liệu theo từng quy trình.
+14. Có chức năng thanh toán thông qua quét mã QR (Momo, Viettel Pay)
+15. Có giao diện đóng góp ý kiến từ khách hàng thông qua QR Code (Google Form)
 
 ## Phần 3: Các chức năng chưa hoàn thành:
-1. Chỉ hiển thị giá trong chương trình, chưa xuất bill được để đưa cho khách
-2. Chỉ đặt từng món cho từng bàn, chưa đặt nhiều hơn 2 món cùng 1 lúc được.
-3. Update sau.
+1. Update sau.
 
 ## Hướng dẫn sử dụng:
 • Tải về và Backup CSDL.
